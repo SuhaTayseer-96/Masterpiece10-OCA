@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deal of the Day</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    .deal-section {
+  background-image: url('bg_3.jpg'); /* Reference the image in the same directory */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #333;
+  text-align: left;
+  position: relative;
+}
+
+
+    .deal-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 1;
+    }
+
+    .deal-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .deal-content h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .deal-content h3 {
+      color: #6c757d;
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+    .price {
+      color: green;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .deal-timer {
+      margin-top: 30px;
+    }
+
+    .deal-timer div {
+      display: inline-block;
+      margin: 0 15px;
+      text-align: center;
+      color: #333;
+    }
+
+    .deal-timer .number {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .deal-timer .label {
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    /* noti*/
+    .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 100px; /* Adjust based on content height */
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.notification p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/*partners*/
+.swiper-container {
+      width: 100%;
+      height: auto; /* Adjust height if needed */
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto; /* Adjust or use a fixed width if needed */
+      height: auto; /* Adjust or use a fixed height if needed */
+    }
+
+    .brand-item img {
+      max-height: 100px; /* Adjust to fit your design */
+      width: auto;
+      object-fit: contain; /* Adjust if you want to maintain aspect ratio */
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Deal of the Day Section -->
+  <section class="deal-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="deal-content">
+            <h3>Best Price For You</h3>
+            <h2>Deal of the Day</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h3><span class="price">$10</span> <span class="text-muted">now $5 only</span></h3>
+
+            <!-- Countdown Timer -->
+            <div class="deal-timer">
+              <div>
+                <span class="number" id="days">0</span>
+                <span class="label">Days</span>
+              </div>
+              <div>
+                <span class="number" id="hours">0</span>
+                <span class="label">Hours</span>
+              </div>
+              <div>
+                <span class="number" id="minutes">0</span>
+                <span class="label">Minutes</span>
+              </div>
+              <div>
+                <span class="number" id="seconds">0</span>
+                <span class="label">Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="notification">
+    <h4>Restaurant Info</h4>
+    <p id="restaurant-name">Loading...</p>
+    <p id="restaurant-items">Loading...</p>
+</div>
+
+
+
+<div class="brand-block md:py-[60px] py-[32px]">
+    <div class="container">
+        <div class="list-brand">
+            <div class="swiper swiper-list-brand">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="https://www.fao.org/images/corporatelibraries/fao-logo/fao-logo-en.svg?sfvrsn=f64522b4_36" alt="1" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="img/11.PNG" alt="2" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="img/22.PNG" alt="3" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="img/33.PNG" alt="4" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="img/44.PNG" alt="5" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="img/55.PNG" alt="6" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div>
+                    <!--
+                    <div class="swiper-slide">
+                        <div class="brand-item relative flex items-center justify-center h-[36px]">
+                            <img src="assets/images/brand/7.png" alt="7" class="h-full w-auto duration-500 relative object-cover" />
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  <!-- Countdown Timer Script -->
+  <script>
+    function countdown() {
+      const deadline = new Date("Dec 31, 2024 23:59:59").getTime();
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "0";
+        document.getElementById("minutes").innerHTML = "0";
+        document.getElementById("seconds").innerHTML = "0";
+      }
+    }
+
+    setInterval(countdown, 1000);
+  </script>
+<script>
+    const restaurants = [
+        { name: "Pizza Palace", items: "Pizza, Pasta, Salads" },
+        { name: "Burger Haven", items: "Burgers, Fries, Shakes" },
+        { name: "Sushi Corner", items: "Sushi, Ramen, Tempura" },
+        { name: "Taco Town", items: "Tacos, Burritos, Nachos" },
+        { name: "Vegan Delight", items: "Salads, Smoothies, Wraps" }
+    ];
+
+    let currentIndex = 0;
+    const displayDuration = 5000; // Duration for each restaurant display
+    const transitionDuration = 1000; // Duration for the slide transition
+
+    function updateNotification() {
+        const restaurant = restaurants[currentIndex];
+        const nameElement = document.getElementById("restaurant-name");
+        const itemsElement = document.getElementById("restaurant-items");
+        const notificationElement = document.querySelector(".notification");
+
+        // Update the content
+        nameElement.textContent = restaurant.name;
+        itemsElement.textContent = restaurant.items;
+
+        // Trigger the show class to slide in
+        notificationElement.classList.add("show");
+
+        setTimeout(() => {
+            // Remove show class to slide out
+            notificationElement.classList.remove("show");
+
+            // Increment the index to show the next restaurant
+            currentIndex = (currentIndex + 1) % restaurants.length;
+        }, displayDuration);
+
+        // Update notification every displayDuration + transitionDuration
+        setTimeout(updateNotification, displayDuration + transitionDuration);
+    }
+
+    // Initial display
+    updateNotification();
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-list-brand', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 2,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 3,
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    });
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
