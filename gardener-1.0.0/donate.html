@@ -46,11 +46,11 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
+                    <span>+962 7 9700 0000</span>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>
-                    <span>info@example.com</span>
+                    <span>Faid@jo.com</span>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -70,30 +70,43 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">Gardener</h1>
+            <h1 class="m-0">FAID  </h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="project.html" class="nav-item nav-link">Projects</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item active">Free Quote</a>
+                        <a href="quote.html" class="dropdown-item">Free Quote</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+           
+<!-- Join Us Button -->
+<a href="javascript:void(0);" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block" id="joinUsBtn">Join us
+    <i class="fa fa-arrow-right ms-3"></i></a>
+
+<!-- Popup Section -->
+<div id="joinUsPopup" class="login-popup">
+    <a href="login.html" class="button-main w-full text-center">Login</a>
+    <div class="text-secondary text-center mt-2 pb-3" style="font-size: large;">
+        Don’t have an account?
+        <a href="register.html" class="text-black pl-1 hover:underline">Register</a>
+    </div>
+    <div class="bottom pt-3 border-t border-line"></div>
+    <a href="#!" class="body1 hover:underline">Support</a>
+</div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -102,62 +115,110 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Free Quote</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Projects</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Free Quote</li>
+                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-
-    <!-- Quote Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Free Quote</p>
-                <h1 class="display-5 mb-5">Get A Free Quote</h1>
+<!-- Donation Page Content Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <!-- Section: Introduction -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5">Help Us Make a Difference</h2>
+                <p class="lead">Your support is crucial to reducing food waste and providing meals to families in need. Join us in creating a greener, more sustainable future by donating today. Every contribution, no matter the size, has a lasting impact.</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-light rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
-                                </div>
+        </div>
+
+        <!-- Section: Your Impact -->
+        <div class="row mb-5">
+            <div class="col-lg-12 text-center">
+                <h3 class="display-6 mb-4">Your Impact</h3>
+                <p class="mb-3">Here’s how your donation can help:</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i> $10 can provide 30 meals for a family in need.</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i> $50 can support our food rescue operations for one day.</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i> $100 can fund educational programs on food sustainability for local communities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section: Success Stories -->
+        <div class="row mb-5">
+            <div class="col-lg-12">
+                <h3 class="display-6 text-center mb-4">Success Stories</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-light p-4 rounded">
+                            <p>"Thanks to this initiative, I’ve been able to reduce food waste in my restaurant while helping the community. I’m proud to be part of this cause!"</p>
+                            <footer class="blockquote-footer">Anna, Restaurant Owner</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote bg-light p-4 rounded">
+                            <p>"We were able to feed our family during a tough time, and knowing that the food was saved from going to waste made it even more special."</p>
+                            <footer class="blockquote-footer">John, Food Recipient</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Why Donate -->
+        <div class="row mb-5">
+            <div class="col-lg-12 text-center">
+                <h3 class="display-6 mb-4">Why Donate to Us?</h3>
+                <p>By donating, you're supporting a mission that’s focused on both reducing food waste and feeding families in need. Together, we can fight hunger while taking action for the environment.</p>
+                <p>Join us to help divert perfectly good food from landfills, reduce greenhouse gases, and make sure every meal finds a home.</p>
+            </div>
+        </div>
+
+        <!-- Section: FAQs -->
+        <div class="row mb-5">
+            <div class="col-lg-12">
+                <h3 class="display-6 text-center mb-4">Frequently Asked Questions</h3>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1Content" aria-expanded="true" aria-controls="faq1Content">
+                                How will my donation be used?
+                            </button>
+                        </h2>
+                        <div id="faq1Content" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Your donation will directly fund our food rescue and distribution programs, helping to divert surplus food from landfills and deliver it to families in need.
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2Content" aria-expanded="false" aria-controls="faq2Content">
+                                Is my donation tax-deductible?
+                            </button>
+                        </h2>
+                        <div id="faq2Content" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, all donations are tax-deductible. You will receive a receipt via email after making your donation for your records.
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3Content" aria-expanded="false" aria-controls="faq3Content">
+                                Can I donate food or items instead of money?
+                            </button>
+                        </h2>
+                        <div id="faq3Content" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we accept in-kind donations, such as surplus food and essential items. Please contact us for more information on how to donate these items.
                             </div>
                         </div>
                     </div>
@@ -165,7 +226,9 @@
             </div>
         </div>
     </div>
-    <!-- Quote End -->
+</div>
+<!-- Donation Page Content End -->
+
 
 
     <!-- Footer Start -->

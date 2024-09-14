@@ -74,7 +74,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">♻️Faid  </h1>
+            <h1 class="m-0">FAID  </h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -84,24 +84,38 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="blogs.html" class="nav-item nav-link">Blogs</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a href="shop.html" class="dropdown-item">Shop</a>
+                        <a href="product.html" class="dropdown-item">Single Product</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Donate<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="donate.html" class="nav-item nav-link" style="color: red; font-weight: bold;" >Donate</a>
+
+           
+<!-- Join Us Button -->
+<a href="javascript:void(0);" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block" id="joinUsBtn">Join us
+    <i class="fa fa-arrow-right ms-3"></i></a>
+
+<!-- Popup Section -->
+<div id="joinUsPopup" class="login-popup">
+    <a href="login.html" class="button-main w-full text-center">Login</a>
+    <div class="text-secondary text-center mt-2 pb-3" style="font-size: large;">
+        Don’t have an account?
+        <a href="register.html" class="text-black pl-1 hover:underline">Register</a>
+    </div>
+    <div class="bottom pt-3 border-t border-line"></div>
+    <a href="#!" class="body1 hover:underline">Support</a>
+</div>
         </div>
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
@@ -273,42 +287,42 @@
         </div>
     </div>
     <!-- Service Section End -->
-      <!-- Deal of the Day Section -->
-  <!-- <section class="deal-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="deal-content">
-            <h3>Best Price For You</h3>
-            <h2>Deal of the Day</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-            <h3><span class="price">$10</span> <span class="text-muted">now $5 only</span></h3> -->
 
-            <!-- Countdown Timer -->
-            <!-- <div class="deal-timer">
-              <div>
-                <span class="number" id="days">0</span>
-                <span class="label">Days</span>
-              </div>
-              <div>
-                <span class="number" id="hours">0</span>
-                <span class="label">Hours</span>
-              </div>
-              <div>
-                <span class="number" id="minutes">0</span>
-                <span class="label">Minutes</span>
-              </div>
-              <div>
-                <span class="number" id="seconds">0</span>
-                <span class="label">Seconds</span>
-              </div>
+<!-- Deal of the Day Section -->
+<section class="deal-section" style="background-image: url('img/bg_3.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="deal-content">
+          <h3>Best Price For You</h3>
+          <h2>Deal of the Day</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          <h3><span class="price">$10</span> <span class="text-muted">now $5 only</span></h3>
+
+          <!-- Countdown Timer -->
+          <div class="deal-timer">
+            <!-- <div>
+              <span class="number" id="days">0</span>
+              <span class="label">Days</span>
+            </div> -->
+            <div>
+              <span class="number" id="hours">0</span>
+              <span class="label">Hours</span>
+            </div>
+            <div>
+              <span class="number" id="minutes">0</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div>
+              <span class="number" id="seconds">0</span>
+              <span class="label">Seconds</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-<!--End the deals Section-->
+  </div>
+</section>
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -422,10 +436,6 @@
     <!-- Features End -->
 
 
-
-
-
-
 <!-- Simplified Donation Form Start -->
 <div class="container-fluid donation-form my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
     <div class="container py-5">
@@ -479,30 +489,21 @@
 </div>
 <!-- Simplified Donation Form End -->
 
-    <!-- Projects Start -->
+    <!-- blogs Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
+                <p class="fs-5 fw-bold text-primary">Blogs</p>
+                <h1 class="display-5 mb-5">Dive Into Our Latest Articles</h1>
             </div>
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="img/blog1.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Landscaping</h4>
+                            <h4 class="text-white mb-4">Recycling Bottles</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -510,11 +511,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="img/blog2.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Pruning plants</h4>
+                            <h4 class="text-white mb-4"> Organic Soap</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -522,11 +523,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="img/blog3.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>
+                            <h4 class="text-white mb-4">Composting Food Waste</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -534,11 +535,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        <img class="img-fluid" src="img/blog5.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Garden Maintenance</h4>
+                            <h4 class="text-white mb-4">The Role of Food Donation in Reducing Waste</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -546,11 +547,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        <img class="img-fluid" src="img/blog4.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Green Technology</h4>
+                            <h4 class="text-white mb-4">Sustainable Eating Habits</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -558,11 +559,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        <img class="img-fluid" src="img/blog6.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Urban Gardening</h4>
+                            <h4 class="text-white mb-4">Community Initiatives for Food Recovery</h4>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
@@ -571,7 +572,7 @@
             </div>
         </div>
     </div>
-    <!-- Projects End -->
+    <!-- blogs End -->
 
 
     <!-- Testimonial Start -->
@@ -606,7 +607,7 @@
     <!-- Testimonial End -->
 <br> <br>
     <!--Partners -->
-<div class="brand-block md:py-[60px] py-[32px]"></div>
+<div class="brand-block md:py-[60px] py-[32px]">
 <div class="container">
     <div class="text-center mb-8"> <!-- Center-align and add margin below -->
         <p class="fs-5 fw-bold text-primary">Our Partners</p>
@@ -618,7 +619,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="brand-item relative flex items-center justify-center h-[36px]">
-                        <img src="https://www.fao.org/images/corporatelibraries/fao-logo/fao-logo-en.svg?sfvrsn=f64522b4_36" alt="1" class="h-full w-auto duration-500 relative object-cover" />
+                        <img src="img/00.png" alt="1" class="h-full w-auto duration-500 relative object-cover" />
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -664,9 +665,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Irbid, Jordan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+962 7 9709 0000</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Faid@jo.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
