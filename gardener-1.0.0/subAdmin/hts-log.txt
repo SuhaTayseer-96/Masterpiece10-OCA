@@ -1,0 +1,36 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 05 Sep 2024 22:58:49 at https://uena.dexignzone.com/cakephp/demo/uena-admin/index?theme=0 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://uena.dexignzone.com/cakephp/demo/uena-admin/index?theme=0 -O1 "C:\Users\Orange\Desktop\pppppppp" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:58:51	Warning: 	Found for https://uena.dexignzone.com/robots.txt
+22:58:51	Warning: 	File has moved from https://uena.dexignzone.com/robots.txt to https://uena.dexignzone.com/xhtml/page-error-404.html
+23:00:34	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/images/dots.png (from https://uena.dexignzone.com/cakephp/demo/css/style.css)
+23:00:34	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/images/dots-2.png (from https://uena.dexignzone.com/cakephp/demo/css/style.css)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/Trident/ (from https://uena.dexignzone.com/cakephp/demo/vendor/apexchart/apexchart.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/Edge/ (from https://uena.dexignzone.com/cakephp/demo/vendor/apexchart/apexchart.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/logo-white.png (from https://uena.dexignzone.com/cakephp/demo/js/custom.min.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/logo-text-white.png (from https://uena.dexignzone.com/cakephp/demo/js/custom.min.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/logo.png (from https://uena.dexignzone.com/cakephp/demo/js/custom.min.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/logo-text.png (from https://uena.dexignzone.com/cakephp/demo/js/custom.min.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/sidebar-img/ (from https://uena.dexignzone.com/cakephp/demo/js/demo.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/vendor/owl-carousel/owl.video.play.png (from https://uena.dexignzone.com/cakephp/demo/vendor/owl-carousel/owl.carousel.css)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/OPR/ (from https://uena.dexignzone.com/cakephp/demo/vendor/flot/jquery.flot.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/no-img-avatar.png (from https://uena.dexignzone.com/cakephp/demo/uena-admin/content-add)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/e (from https://uena.dexignzone.com/cakephp/demo/vendor/ckeditor/ckeditor.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/picker.js (from https://uena.dexignzone.com/cakephp/demo/vendor/pickadate/picker.time.js)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/images/favicon.png (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/css/style.css (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/vendor/global/global.min.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/js/custom.min.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/js/deznav-init.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/js/demo.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+23:00:44	Error: 	"Not Found" (404) at link https://uena.dexignzone.com/cakephp/demo/uena-admin/js/styleSwitcher.js (from https://uena.dexignzone.com/cakephp/demo/uena-admin/page-forgot-password)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 55 seconds : 333 links scanned, 309 files written (19418605 bytes overall) [13600619 bytes received at 118266 bytes/sec], 6797554 bytes transferred using HTTP compression in 79 files, ratio 12%, 22.2 requests per connection
+(23 errors, 2 warnings, 0 messages)

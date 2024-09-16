@@ -30,6 +30,43 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .article-content {
+           padding: 40px;
+           border-radius: 8px;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+           margin-top: -100px;
+           z-index: 100;
+       }
+
+       .img-section {
+           margin: 40px 0;
+       }
+
+       .img-section img {
+           width: 100%;
+           height: auto;
+           border-radius: 10px;
+       }
+
+       .cards-container .card {
+           transition: transform 0.3s ease;
+           border: none;
+           border-radius: 10px;
+           overflow: hidden;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+       }
+
+       .cards-container .card:hover {
+           transform: translateY(-10px);
+       }
+
+       .cards-container .card-title {
+           color: #333;
+           font-weight: bold;
+       }
+       
+   </style>
 </head>
 
 <body>
@@ -117,12 +154,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Projects</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Contact Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
                 </ol>
             </nav>
         </div>
@@ -130,90 +167,75 @@
     <!-- Page Header End -->
 
 
-   <!-- blogs Start -->
-   <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-bold text-primary">Blogs</p>
-            <h1 class="display-5 mb-5">Dive Into Our Latest Articles</h1>
+<!-- blogs Start -->
+<div class="container">
+    <!-- Blog Article Section -->
+    <div class="article-content shadow-sm p-5 mb-5 bg-body rounded">
+        <h2>Why Recycling Bottles Matters</h2>
+        <p class="text-muted">Posted on September 14, 2024 by Green Solutions</p>
+
+        <p>Every day, millions of plastic bottles are discarded, ending up in landfills, oceans, and natural habitats. Recycling bottles not only reduces waste but also conserves resources, reduces energy consumption, and protects the environment from pollution.</p>
+
+        <h3>The Environmental Impact</h3>
+        <p>Plastic bottles can take up to 1,000 years to decompose, leaking harmful chemicals into the soil and water during the process. By recycling just one ton of plastic, we can save the equivalent of 5,774 kilowatt-hours of energy, 16.3 barrels of oil, and 30 cubic yards of landfill space.</p>
+
+        <!-- Image Section (Side by Side Images) -->
+        <div class="row img-section">
+            <div class="col-md-6">
+                <img src="img/blog1.jpg" alt="Recycling Plant">
+            </div>
+            <div class="col-md-6">
+                <img src="img/recycling bottles (1).jpg" alt="Recycled Products">
+            </div>
         </div>
-        <div class="row g-4 portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog1.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Recycling Bottles</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
+
+        <h3>How Bottle Recycling Works</h3>
+        <p>Recycling bottles begins with collection and sorting. Bottles are cleaned and melted down to form plastic pellets, which are then used to manufacture new products, such as clothing, containers, and even new bottles. The process is energy-efficient and reduces the need for virgin plastic production, which relies on fossil fuels.</p>
+
+        <h3>How You Can Help</h3>
+        <p>You can make a difference by participating in local recycling programs and ensuring that every plastic bottle you use is properly recycled. Remember to rinse your bottles before recycling to prevent contamination and support businesses that use recycled materials.</p>
+
+        <h3>The Future of Recycling</h3>
+        <p>With the growing awareness of the plastic crisis, innovations in recycling technology are emerging. From chemical recycling methods to bio-based plastics, the future of recycling is promising. However, consumer responsibility remains crucial in ensuring that we minimize plastic waste and move towards a sustainable, circular economy.</p>
+
+        <p>By recycling bottles, we contribute to a cleaner, greener planet. It’s a small step with a big impact on future generations and the health of our environment.</p>
+    </div>
+
+    <!-- Cards for Other Articles Start -->
+
+    <div class="row cards-container g-4">
+        <div class="col-md-4 d-flex">
+            <div class="card flex-fill shadow-sm">
+                <img src="img/blog2.jpg" class="card-img-top" alt="Plastic Recycling">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"> Organic Soap</h5>
+                    <p class="card-text flex-grow-1">Organic soap is made from natural ingredients, offering an eco-friendly alternative to chemical-based products that harm the environment.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Read More</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog2.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4"> Organic Soap</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="card flex-fill shadow-sm">
+                <img src="img/blog3.jpg" class="card-img-top" alt="Reduce Food Waste">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Composting Food Waste</h5>
+                    <p class="card-text flex-grow-1">Composting turns organic waste into nutrient-rich soil, reducing landfill impact and promoting sustainable gardening</p>
+                    <a href="#" class="btn btn-primary mt-auto">Read More</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog3.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Composting Food Waste</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog5.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">The Role of Food Donation in Reducing Waste</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog4.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Sustainable Eating Habits</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog6.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Community Initiatives for Food Recovery</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="card flex-fill shadow-sm">
+                <img src="img/blog5.jpg" class="card-img-top" alt="Sustainable Packaging">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">The Role of Food Donation in Reducing Waste</h5>
+                    <p class="card-text flex-grow-1">Donating surplus food helps combat hunger while reducing the amount of food wasted, ensuring resources are efficiently used</p>
+                    <a href="#" class="btn btn-primary mt-auto">Read More</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- blogs End -->
 
 
     <!-- Footer Start -->
