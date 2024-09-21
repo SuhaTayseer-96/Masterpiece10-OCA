@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\appsettings.json",
+              "RelativeDocumentMoniker": "Faid\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\appsettings.json",
+              "RelativeToolTip": "Faid\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-20T19:29:51.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Program.cs",
+              "RelativeDocumentMoniker": "Faid\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Program.cs",
+              "RelativeToolTip": "Faid\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T19:29:27.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Faid\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Faid\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T19:29:21.802Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

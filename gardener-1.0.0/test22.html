@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Listings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .product-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            border-radius: 8px 8px 0 0;
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .product-card-body {
+            padding: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Food Listings</h2>
+        <div class="row">
+            <!-- Product Card -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Food Item">
+                    <div class="product-card-body">
+                        <h5 class="card-title">Delicious Pizza</h5>
+                        <p class="card-text">A scrumptious pizza with a variety of toppings. Perfect for any meal.</p>
+                        <p class="card-text"><strong>Price:</strong> $12.99</p>
+                        <button class="btn btn-primary w-100">Express Interest</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+    </div>
+    <!-- Modal HTML -->
+<div class="modal fade" id="interestModal" tabindex="-1" aria-labelledby="interestModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="interestModalLabel">Express Your Interest</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="interestForm">
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" rows="3" placeholder="Any additional comments or questions"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pickupTime" class="form-label">Pickup Time</label>
+                        <input type="datetime-local" class="form-control" id="pickupTime" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Interest</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.btn-primary').forEach(button => {
+        button.addEventListener('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('interestModal'));
+            myModal.show();
+        });
+    });
+
+    document.getElementById('interestForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Your interest has been recorded. We will get back to you soon.');
+        document.getElementById('interestForm').reset();
+        var myModal = bootstrap.Modal.getInstance(document.getElementById('interestModal'));
+        myModal.hide();
+    });
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('reservationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const userName = document.getElementById('userName').value;
+        const userEmail = document.getElementById('userEmail').value;
+        const pickupTime = document.getElementById('pickupTime').value;
+        const quantity = document.getElementById('quantity').value;
+
+        console.log({ userName, userEmail, pickupTime, quantity });
+
+        alert('Your reservation has been submitted. We will prepare your order for pickup at the specified time.');
+        document.getElementById('reservationForm').reset();
+    });
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

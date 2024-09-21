@@ -76,7 +76,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">FAID  </h1>
+            <h1 class="m-0">FAI<span style="color: #FFC107;">D</span></h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -92,7 +92,7 @@
                         <a href="blogs.html" class="dropdown-item">Blogs</a>
                         <a href="storelist.html" class="dropdown-item">Restaurant Lists</a>
                         <a href="shop.html" class="dropdown-item">Shop</a>
-                        <a href="product.html" class="dropdown-item">Single Product</a>
+                        <!-- <a href="product.html" class="dropdown-item">Single Product</a> -->
                         <a href="myaccount.html" class="dropdown-item">My Account</a>
                         <a href="subAdmin/uena.dexignzone.com/cakephp/demo/uena-admin/AdminDash.html" class="dropdown-item">Super Admin</a>
                         <a href="admin/html.phoenixcoded.net/light-able/bootstrap/application/account-profile.html" class="dropdown-item">Admin</a>
@@ -442,139 +442,82 @@
         </div>
     </div>
     <!-- Features End -->
-
-
-<!-- Simplified Donation Form Start -->
+<!-- Donation Form Section Removed -->
 <div id="donationform" class="container-fluid donation-form my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-5 text-center mb-5">Make a Donation</h1>
-                    <div class="row g-3">
-                        <!-- Full Name -->
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" class="form-control bg-light border-0" id="fullName" placeholder="Full Name" required>
-                                <label for="fullName">Full Name</label>
-                            </div>
-                        </div>
-                        <!-- Email Address -->
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="email" class="form-control bg-light border-0" id="emailAddress" placeholder="Email Address" required>
-                                <label for="emailAddress">Email Address</label>
-                            </div>
-                        </div>
-                        <!-- Donation Amount -->
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="number" class="form-control bg-light border-0" id="donationAmount" placeholder="Donation Amount" required>
-                                <label for="donationAmount">Donation Amount (USD)</label>
-                            </div>
-                        </div>
-                        <!-- Payment Method -->
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <select class="form-select bg-light border-0" id="paymentMethod" required>
-                                    <option selected>Select Payment Method</option>
-                                    <option value="1">Credit/Debit Card</option>
-                                    <option value="2">PayPal</option>
-                                    <option value="3">Bank Transfer</option>
-                                </select>
-                                <label for="paymentMethod">Payment Method</label>
-                            </div>
-                        </div>
-                        <!-- Donate Button -->
-                        <div class="col-12 text-center">
-                            <button class="btn btn-success py-3 px-5" type="submit">Donate Now</button>
-                        </div>
+                    <h1 class="display-5 text-center mb-5">Welcome to Our Donation Platform</h1>
+                    <p class="text-center">Explore our initiatives and choose how you'd like to contribute!</p>
+                    <!-- Navigation buttons to donation pages -->
+                    <div class="text-center">
+                        <a href="donate.html" class="btn btn-primary py-2 px-4">Donate Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Simplified Donation Form End -->
+<!-- Section ends -->
 
-<!-- Blogs Section Start -->
-<div class="container-xxl py-5">
+
+
+<!-- Latest News Section -->
+<div class="latest-news-section">
     <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-bold text-primary">Blogs</p>
-            <h1 class="display-5 mb-5">Dive Into Our Latest Articles</h1>
-        </div>
-        <div class="row g-4 portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/blog1.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Recycling Bottles</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="blogs.html"><i class="fa fa-link"></i></a>
-                        </div>
+        <h2 class="mb-5 text-center" style="font-size: 2.5rem;">Latest News</h2>
+        
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/10000.jpg" class="card-img-top" alt="Partnership with XYZ Restaurant">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 1.5rem;">Partnership with XYZ Restaurant!</h5>
+                        <p class="card-date" style="font-size: 1rem;">September 10, 2024</p>
+                        <p class="card-text">We’ve partnered with XYZ Restaurant to donate surplus food, helping to feed more people and reduce waste.</p>
                     </div>
                 </div>
             </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/blog2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4"> Organic Soap</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/1000000.jpg" class="card-img-top" alt="10,000 Meals Donated">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 1.5rem;">10,000 Meals Donated!</h5>
+                        <p class="card-date" style="font-size: 1rem;">August 25, 2024</p>
+                        <p class="card-text">Our platform has officially donated over 10,000 meals to those in need, thanks to our partners.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/blog3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Composting Food Waste</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/ngo.jpg" class="card-img-top" alt="Upcoming Food Drive">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 1.5rem;">Collaboration with Local NGOs</h5>
+                        <p class="card-date" style="font-size: 1rem;">June 5, 2024</p>
+                        <p class="card-text">We've teamed up with several local NGOs to expand our reach and provide more meals to those in need.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/blog5.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">The Role of Food Donation<br> in Reducing Waste</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/blog4.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Sustainable Eating Habits</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/blog6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4"> Community Initiatives <br>for Food Recovery</h4>
-                            <div class="d-flex">
-                                <!-- <a class="btn btn-lg-square rounded-circle mx-2" href="img/blog6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/donation.jpg" class="card-img-top" alt="Launch of Our Donation Platform">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 1.5rem;">Launch of Our Donation Platform</h5>
+                        <p class="card-date" style="font-size: 1rem;">July 15, 2024</p>
+                        <p class="card-text">We are excited to announce the launch of our new donation platform for easy contributions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="text-center mt-4">
+    <a href="blogs.html" class="btn btn-primary" style="font-size: 1.25rem;">View All News</a>
+</div>
     <!-- blogs End -->
 
 
@@ -661,6 +604,16 @@
 </div>
 </section>
 <!--Partners -->
+
+<!--Notification-->
+<div class="notification">
+    <h4>Restaurant Info</h4>
+    <p id="restaurant-name">Loading...</p>
+    <p id="restaurant-items">Loading...</p>
+</div>
+<!--Notification-->
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -744,7 +697,46 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+        const restaurants = [
+            { name: "Pizza Palace", items: "Pizza, Pasta, Salads" },
+            { name: "Burger Haven", items: "Burgers, Fries, Shakes" },
+            { name: "Taco Town", items: "Tacos, Burritos, Nachos" },
+            { name: "Vegan Delight", items: "Salads, Smoothies, Wraps" }
+        ];
     
+        let currentIndex = 0;
+        const displayDuration = 5000; // Duration for each restaurant display
+        const transitionDuration = 1000; // Duration for the slide transition
+    
+        function updateNotification() {
+            const restaurant = restaurants[currentIndex];
+            const nameElement = document.getElementById("restaurant-name");
+            const itemsElement = document.getElementById("restaurant-items");
+            const notificationElement = document.querySelector(".notification");
+    
+            // Update the content
+            nameElement.textContent = restaurant.name;
+            itemsElement.textContent = restaurant.items;
+    
+            // Trigger the show class to slide in
+            notificationElement.classList.add("show");
+    
+            setTimeout(() => {
+                // Remove show class to slide out
+                notificationElement.classList.remove("show");
+    
+                // Increment the index to show the next restaurant
+                currentIndex = (currentIndex + 1) % restaurants.length;
+            }, displayDuration);
+    
+            // Update notification every displayDuration + transitionDuration
+            setTimeout(updateNotification, displayDuration + transitionDuration);
+        }
+    
+        // Initial display
+        updateNotification();
+    </script>
 </body>
 
 </html>

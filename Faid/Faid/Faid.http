@@ -1,0 +1,6 @@
+@Faid_HostAddress = http://localhost:5001
+
+GET {{Faid_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
