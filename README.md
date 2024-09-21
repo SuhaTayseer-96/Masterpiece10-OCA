@@ -22,7 +22,9 @@ Database: SQL Server,
 [This is the last project with Orange Coding Academy]
 
 Figma: https://www.figma.com/design/Jpg9bLz1jbiWVfH2HLX6zx/Masterpiece?node-id=0-1&node-type=canvas&t=hSj87v7gHn3recB3-0
+
 Documentation: https://docs.google.com/document/d/1ep5SQK3m8xuEiRSZjGRL0LfS1g7eT3Wp4sT8n7ZNDxI/edit?usp=sharing
-Presentation + Business model:
+
+Presentation + Business model: https://www.canva.com/design/DAGRZ7RSENA/3CL3wpx7hYfoS5FSi5O-AQ/edit?utm_content=DAGRZ7RSENA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
