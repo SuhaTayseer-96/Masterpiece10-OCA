@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FAID</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+962 7 9700 0000</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>Faid@jo.com</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h1 class="m-0">FAI<span style="color: #FFC107;">D</span></h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu bg-light m-0">
+                    <a href="blogs.html" class="dropdown-item">Blogs</a>
+                    <a href="storelist.html" class="dropdown-item">Restaurant Lists</a>
+                    <a href="shop.html" class="dropdown-item">Shop</a>
+                    <!-- <a href="product.html" class="dropdown-item">Single Product</a> -->
+                    <a href="myaccount.html" class="dropdown-item">My Account</a>
+                    <a href="subAdmin/uena.dexignzone.com/cakephp/demo/uena-admin/AdminDash.html" class="dropdown-item">Super Admin</a>
+                    <a href="admin/html.phoenixcoded.net/light-able/bootstrap/application/account-profile.html" class="dropdown-item">Admin</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="donate.html" class="nav-item nav-link" style="color:#FFC107; font-weight: bold;" >Donate</a>
+
+       
+<!-- Join Us Button -->
+<a href="javascript:void(0);" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block" id="joinUsBtn">Join us
+<i class="fa fa-arrow-right ms-3"></i></a>
+
+<!-- Popup Section -->
+<div id="joinUsPopup" class="login-popup">
+<a href="login.html" class="button-main w-full text-center">Login</a>
+<div class="text-secondary text-center mt-2 pb-3" style="font-size: large;">
+    Don’t have an account?
+    <a href="register.html" class="text-black pl-1 hover:underline">Register</a>
+</div>
+<div class="bottom pt-3 border-t border-line"></div>
+<a href="#!" class="body1 hover:underline">Support</a>
+</div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Restaurant Lists</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Shop Now</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Restaurant Lists</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!--Content start-->
+<div class="container py-5">
+    <div class="row">
+        <!-- Left Panel: Restaurant Profile Sidebar -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <div class="text-center">
+                    <!-- Reduce the size of the profile image -->
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" id="restaurantImage" alt="Restaurant Image" style="width: 100px; height: 100px;">
+                    <h4 id="restaurantName">Restaurant Name</h4>
+                    <p id="restaurantEmail">restaurant@example.com</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-center" onclick="showSection('accountDetails')">
+                        <i class="bi bi-person-fill me-2"></i> Account Details
+                    </li>
+                    <li class="list-group-item d-flex align-items-center" onclick="showSection('menu')">
+                        <i class="bi bi-bag-fill me-2"></i> Menu Management
+                    </li>
+                    <li class="list-group-item d-flex align-items-center" onclick="showSection('orders')">
+                        <i class="bi bi-basket-fill me-2"></i> Orders
+                    </li>
+                    <li class="list-group-item d-flex align-items-center" onclick="showSection('logout')">
+                        <i class="bi bi-box-arrow-right me-2"></i> Logout
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Panel: Restaurant Information -->
+        <div class="col-md-8">
+            <!-- Account Details Section -->
+            <div class="card p-4 section" id="accountDetails">
+                <h4 class="mb-4">Restaurant Information</h4>
+                <form id="restaurantForm">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" id="restaurantNameInput" placeholder="Restaurant name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="ownerNameInput" placeholder="Owner name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="email" class="form-control" id="restaurantEmailInput" placeholder="Email address">
+                        </div>
+                        <div class="col">
+                            <input type="tel" class="form-control" id="phoneInput" placeholder="Phone number">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" id="addressInput" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" id="foodTypeInput" placeholder="Food Type">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark w-100" onclick="updateRestaurantProfile()">Update Profile</button>
+                </form>
+            </div>
+<!-- Orders Section -->
+<div class="card p-4 section d-none" id="orders">
+    <h4 class="mb-4">Your Orders</h4>
+    <p>List of your recent orders will be displayed here...</p>
+</div>
+            <!-- Menu Section -->
+            <div class="card p-4 section d-none" id="menu">
+                <h4 class="mb-4">Manage Menu</h4>
+            
+                <!-- Table to display existing menu items -->
+                <h5>Your Current Menu</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menuItems">
+                        <!-- Menu items will be dynamically added here -->
+                    </tbody>
+                </table>
+            
+                <!-- Form to add a new menu item -->
+                <h5 class="mt-4">Add New Menu Item</h5>
+                <form id="addMenuItemForm">
+                    <div class="mb-3">
+                        <label for="foodName" class="form-label">Food Name</label>
+                        <input type="text" class="form-control" id="foodName" placeholder="Enter food name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="foodDescription" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="foodDescription" placeholder="Enter description" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="foodPrice" class="form-label">Price ($)</label>
+                        <input type="number" step="0.01" class="form-control" id="foodPrice" placeholder="Enter price" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="menuItemImage" class="form-label">Food Image</label>
+                        <input type="file" class="form-control" id="menuItemImage" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Add Menu Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Content ends-->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Landscaping</a>
+                    <a class="btn btn-link" href="">Pruning plants</a>
+                    <a class="btn btn-link" href="">Urban Gardening</a>
+                    <a class="btn btn-link" href="">Garden Maintenance</a>
+                    <a class="btn btn-link" href="">Green Technology</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+
+// Function to show a specific section
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.add('d-none')); // Hide all sections
+    document.getElementById(sectionId).classList.remove('d-none'); // Show the selected section
+}
+
+// Function to fetch restaurant data
+async function fetchRestaurantData() {
+    const restaurantId = 1; // Replace with the logged-in restaurant's ID
+    
+    try {
+        const response = await fetch(`https://localhost:44395/api/Restaurant/${restaurantId}`);
+        const restaurant = await response.json();
+
+        // Populate the profile fields with restaurant data
+        document.getElementById('restaurantImage').src = restaurant.image;
+        document.getElementById('restaurantName').innerText = restaurant.name;
+        document.getElementById('restaurantEmail').innerText = restaurant.email;
+
+        // Populate the form inputs with restaurant data
+        document.getElementById('restaurantNameInput').value = restaurant.name;
+        document.getElementById('ownerNameInput').value = restaurant.ownerName;
+        document.getElementById('restaurantEmailInput').value = restaurant.email;
+        document.getElementById('phoneInput').value = restaurant.phoneNo;
+        document.getElementById('addressInput').value = restaurant.address;
+        document.getElementById('foodTypeInput').value = restaurant.foodType;
+
+        // Fetch the restaurant's menu items
+        fetchMenuItems();
+    } catch (error) {
+        console.error('Error fetching restaurant data:', error);
+    }
+}
+
+// Function to update the restaurant profile, including the image upload
+async function updateRestaurantProfile() {
+    const restaurantId = 1; // Replace with the logged-in restaurant's ID
+
+    // Create a new FormData object to handle text and image uploads
+    const formData = new FormData();
+    formData.append('name', document.getElementById('restaurantNameInput').value);
+    formData.append('ownerName', document.getElementById('ownerNameInput').value);
+    formData.append('email', document.getElementById('restaurantEmailInput').value);
+    formData.append('phoneNo', document.getElementById('phoneInput').value);
+    formData.append('address', document.getElementById('addressInput').value);
+    formData.append('foodType', document.getElementById('foodTypeInput').value);
+
+    // If a new profile image is selected, append it to the form data
+    const imageInput = document.getElementById('restaurantImageInput');
+    if (imageInput.files.length > 0) {
+        formData.append('image', imageInput.files[0]); // append image file
+    }
+
+    try {
+        const response = await fetch(`https://localhost:44395/api/Restaurant/${restaurantId}`, {
+            method: 'PUT',
+            body: formData // Send the form data (text + image)
+        });
+
+        if (response.ok) {
+            alert('Profile updated successfully!');
+            fetchRestaurantData(); // Optionally, re-fetch restaurant data to update the displayed image
+        } else {
+            alert('Failed to update profile.');
+        }
+    } catch (error) {
+        console.error('Error updating restaurant profile:', error);
+    }
+}
+
+// Fetch and display current menu items when the page loads
+async function fetchMenuItems() {
+    const restaurantId = 1; // Replace with actual restaurant ID
+    try {
+        const response = await fetch(`https://localhost:44395/api/Restaurant/${restaurantId}/menu`);
+        const menuItems = await response.json();
+
+        const menuItemsContainer = document.getElementById('menuItems');
+        menuItemsContainer.innerHTML = ''; // Clear previous content
+
+        menuItems.forEach(item => {
+            const menuItemRow = `
+                <tr>
+                    <td>${item.foodName}</td>
+                    <td>${item.description}</td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" onclick="editMenuItem(${item.menuId})">Edit</button>
+                        <button class="btn btn-sm btn-danger" onclick="deleteMenuItem(${item.menuId})">Delete</button>
+                    </td>
+                </tr>
+            `;
+            menuItemsContainer.innerHTML += menuItemRow;
+        });
+    } catch (error) {
+        console.error('Error fetching menu items:', error);
+    }
+}
+
+// Handle adding a new menu item with an image
+document.getElementById('addMenuItemForm').addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const restaurantId = 1; // Replace with actual restaurant ID
+
+    // Create a new FormData object to handle text and image uploads
+    const formData = new FormData();
+    formData.append('foodName', document.getElementById('foodName').value);
+    formData.append('description', document.getElementById('foodDescription').value);
+    formData.append('price', parseFloat(document.getElementById('foodPrice').value));
+
+    // If an image is selected for the menu item, append it to the form data
+    const menuItemImageInput = document.getElementById('menuItemImage');
+    if (menuItemImageInput.files.length > 0) {
+        formData.append('image', menuItemImageInput.files[0]); // append image file
+    }
+
+    try {
+        const response = await fetch(`https://localhost:44395/api/Restaurant/${restaurantId}/menu`, {
+            method: 'POST',
+            body: formData // Send the form data (text + image)
+        });
+
+        if (response.ok) {
+            alert('Menu item added successfully!');
+            fetchMenuItems(); // Refresh the menu list
+        } else {
+            alert('Failed to add menu item.');
+        }
+    } catch (error) {
+        console.error('Error adding menu item:', error);
+    }
+});
+
+// Handle deleting a menu item
+async function deleteMenuItem(menuId) {
+    const restaurantId = 1; // Replace with actual restaurant ID
+    try {
+        const response = await fetch(`https://localhost:44395/api/Restaurant/${restaurantId}/menu/${menuId}`, {
+            method: 'DELETE',
+        });
+
+        if (response.ok) {
+            alert('Menu item deleted successfully!');
+            fetchMenuItems(); // Refresh the menu list
+        } else {
+            alert('Failed to delete menu item.');
+        }
+    } catch (error) {
+        console.error('Error deleting menu item:', error);
+    }
+}
+
+// Call the function to load restaurant and menu data when the page loads
+window.onload = fetchRestaurantData;
+
+
+    </script>
+
+</script>
+</body>
+
+</html>

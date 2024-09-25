@@ -15,13 +15,21 @@ public partial class MyDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Donation> Donations { get; set; }
+    public virtual DbSet<ContactInquiry> ContactInquiries { get; set; }
+
+    public virtual DbSet<ContactU> ContactUs { get; set; }
 
     public virtual DbSet<FoodAvailable> FoodAvailables { get; set; }
 
     public virtual DbSet<FoodCollectionRequest> FoodCollectionRequests { get; set; }
 
     public virtual DbSet<FoodDistributionRequest> FoodDistributionRequests { get; set; }
+
+    public virtual DbSet<FoodDonation> FoodDonations { get; set; }
+
+    public virtual DbSet<MoneyDonation> MoneyDonations { get; set; }
+
+    public virtual DbSet<NewsPost> NewsPosts { get; set; }
 
     public virtual DbSet<Order> Orders { get; set; }
 
@@ -31,6 +39,8 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Restaurant> Restaurants { get; set; }
 
+    public virtual DbSet<RestaurantDonation> RestaurantDonations { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -39,39 +49,60 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Donation>(entity =>
+        modelBuilder.Entity<ContactInquiry>(entity =>
         {
-            entity.HasKey(e => e.DonationId).HasName("PK__Donation__C5082EDB04CCCE7A");
+            entity.HasKey(e => e.InquiryId).HasName("PK__ContactI__05E6E7EF0B7F93CF");
 
-            entity.Property(e => e.DonationId).HasColumnName("DonationID");
-            entity.Property(e => e.DonationAmount).HasColumnType("decimal(10, 2)");
-            entity.Property(e => e.DonationDate)
+            entity.Property(e => e.InquiryId).HasColumnName("InquiryID");
+            entity.Property(e => e.Email)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.FullName)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.MessageContent).HasColumnType("text");
+            entity.Property(e => e.Subject)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.SubmissionDate)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.DonationDetails).HasMaxLength(255);
-            entity.Property(e => e.DonationType).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<ContactU>(entity =>
+        {
+            entity.HasKey(e => e.ContactId).HasName("PK__ContactU__5C6625BBB55AED50");
+
+            entity.Property(e => e.ContactId).HasColumnName("ContactID");
+            entity.Property(e => e.Email).HasMaxLength(100);
+            entity.Property(e => e.Name).HasMaxLength(100);
+            entity.Property(e => e.Subject).HasMaxLength(200);
+            entity.Property(e => e.SubmittedOn)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Donations)
+            entity.HasOne(d => d.User).WithMany(p => p.ContactUs)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Donations__UserI__44FF419A");
+                .HasConstraintName("FK__ContactUs__UserI__73BA3083");
         });
 
         modelBuilder.Entity<FoodAvailable>(entity =>
         {
-            entity.HasKey(e => e.FoodId).HasName("PK__FoodAvai__856DB3CB9A92967E");
+            entity.HasKey(e => e.FoodId).HasName("PK__FoodAvai__856DB3CB61CECA5D");
 
             entity.ToTable("FoodAvailable");
 
             entity.Property(e => e.FoodId).HasColumnName("FoodID");
             entity.Property(e => e.AvailableUntil).HasColumnType("datetime");
             entity.Property(e => e.FoodName).HasMaxLength(100);
+            entity.Property(e => e.Image).IsUnicode(false);
             entity.Property(e => e.Price).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
 
             entity.HasOne(d => d.Restaurant).WithMany(p => p.FoodAvailables)
                 .HasForeignKey(d => d.RestaurantId)
-                .HasConstraintName("FK__FoodAvail__Resta__3D5E1FD2");
+                .HasConstraintName("FK__FoodAvail__Resta__76969D2E");
         });
 
         modelBuilder.Entity<FoodCollectionRequest>(entity =>
@@ -104,9 +135,47 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.PickupAddress).HasMaxLength(255);
         });
 
+        modelBuilder.Entity<FoodDonation>(entity =>
+        {
+            entity.HasKey(e => e.DonationId).HasName("PK__FoodDona__C5082EDBB6E4A881");
+
+            entity.Property(e => e.DonationId).HasColumnName("DonationID");
+            entity.Property(e => e.ContactInfo).HasMaxLength(255);
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FoodType).HasMaxLength(255);
+            entity.Property(e => e.PickupArrangements).HasMaxLength(500);
+        });
+
+        modelBuilder.Entity<MoneyDonation>(entity =>
+        {
+            entity.HasKey(e => e.DonationId).HasName("PK__MoneyDon__C5082EDBB83705C1");
+
+            entity.Property(e => e.DonationId).HasColumnName("DonationID");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.DonationAmount).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.DonationFrequency).HasMaxLength(50);
+            entity.Property(e => e.FundUsage).HasMaxLength(500);
+        });
+
+        modelBuilder.Entity<NewsPost>(entity =>
+        {
+            entity.HasKey(e => e.PostId).HasName("PK__NewsPost__AA1260381169C0E2");
+
+            entity.Property(e => e.PostId).HasColumnName("PostID");
+            entity.Property(e => e.Image).IsUnicode(false);
+            entity.Property(e => e.PublishedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Title).HasMaxLength(255);
+        });
+
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAF57813080");
+            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAF6DEC05C5");
 
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
             entity.Property(e => e.FoodId).HasColumnName("FoodID");
@@ -118,11 +187,11 @@ public partial class MyDbContext : DbContext
 
             entity.HasOne(d => d.Food).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.FoodId)
-                .HasConstraintName("FK__Orders__FoodID__412EB0B6");
+                .HasConstraintName("FK__Orders__FoodID__7A672E12");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Orders__UserID__403A8C7D");
+                .HasConstraintName("FK__Orders__UserID__797309D9");
         });
 
         modelBuilder.Entity<Partner>(entity =>
@@ -131,6 +200,7 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.PartnerId).HasColumnName("PartnerID");
             entity.Property(e => e.ContactInfo).HasMaxLength(255);
+            entity.Property(e => e.Image).IsUnicode(false);
             entity.Property(e => e.PartnerName).HasMaxLength(100);
             entity.Property(e => e.PartnerType).HasMaxLength(100);
         });
@@ -141,6 +211,9 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.RequestId).HasColumnName("RequestID");
             entity.Property(e => e.ContactPerson).HasMaxLength(100);
+            entity.Property(e => e.ContactPhoneNumber)
+                .HasMaxLength(15)
+                .IsUnicode(false);
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.OrganizationName).HasMaxLength(100);
             entity.Property(e => e.OrganizationType).HasMaxLength(100);
@@ -154,8 +227,27 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
             entity.Property(e => e.Address).HasMaxLength(255);
             entity.Property(e => e.ContactInfo).HasMaxLength(100);
+            entity.Property(e => e.Email).HasMaxLength(255);
             entity.Property(e => e.FoodType).HasMaxLength(100);
+            entity.Property(e => e.Image).IsUnicode(false);
             entity.Property(e => e.Name).HasMaxLength(100);
+            entity.Property(e => e.OwnerName).HasMaxLength(100);
+            entity.Property(e => e.Password).HasMaxLength(255);
+            entity.Property(e => e.PhoneNo).HasMaxLength(20);
+        });
+
+        modelBuilder.Entity<RestaurantDonation>(entity =>
+        {
+            entity.HasKey(e => e.DonationId).HasName("PK__Restaura__C5082EDBCD5481E7");
+
+            entity.Property(e => e.DonationId).HasColumnName("DonationID");
+            entity.Property(e => e.ContactDetails).HasMaxLength(255);
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FoodDonated).HasMaxLength(500);
+            entity.Property(e => e.PickupDetails).HasMaxLength(500);
+            entity.Property(e => e.RestaurantName).HasMaxLength(255);
         });
 
         modelBuilder.Entity<User>(entity =>
@@ -170,10 +262,8 @@ public partial class MyDbContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.Email).HasMaxLength(100);
-            entity.Property(e => e.Name).HasMaxLength(100);
-            entity.Property(e => e.PasswordHash).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(20);
-            entity.Property(e => e.UserType).HasMaxLength(50);
+            entity.Property(e => e.UserName).HasMaxLength(100);
         });
 
         OnModelCreatingPartial(modelBuilder);

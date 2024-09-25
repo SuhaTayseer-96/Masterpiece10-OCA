@@ -1,0 +1,497 @@
+[
+  {
+    "ContainingType": "Faid.Controllers.DonatesController",
+    "Method": "MoneyDonation",
+    "RelativePath": "api/Donates/api/MoneyDonation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DonationAmount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "DonationFrequency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FundUsage",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.DonatesController",
+    "Method": "RestaurantDonation",
+    "RelativePath": "api/Donates/api/RestDonation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RestaurantName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FoodDonated",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PickupDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.DonatesController",
+    "Method": "FoodDonation",
+    "RelativePath": "api/Donates/FoodDonation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FoodType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PickupArrangements",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactInfo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.HomeController",
+    "Method": "GetNewsPosts",
+    "RelativePath": "api/Home/GetAllNews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "RestByID",
+    "RelativePath": "api/Register/api/GetAllRestByID{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "Restaurant",
+    "RelativePath": "api/Register/api/GetAllRests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "UserByID",
+    "RelativePath": "api/Register/api/GetAllUserByID{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "Restaurant",
+    "RelativePath": "api/Register/api/LogForm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OwnerName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "register",
+    "RelativePath": "api/Register/api/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "User",
+    "RelativePath": "api/Register/GetAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "User",
+    "RelativePath": "api/Register/LogForm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RegisterController",
+    "Method": "UserLog",
+    "RelativePath": "api/Register/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RestaurantController",
+    "Method": "GetRestaurant",
+    "RelativePath": "api/Restaurant/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RestaurantController",
+    "Method": "UpdateRestaurant",
+    "RelativePath": "api/Restaurant/{restaurantId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedRestaurant",
+        "Type": "Faid.Models.Restaurant",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RestaurantController",
+    "Method": "getAllRestaurant",
+    "RelativePath": "api/Restaurant/getAllRestaurant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.RestaurantController",
+    "Method": "GetMenuForRestaurant",
+    "RelativePath": "api/Restaurant/menu/{restaurantId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "FoodCollectionRequest",
+    "RelativePath": "api/ServicesRequestsForms/api/PostFoodCol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PickupAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FoodType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreferredPickupDate",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreferredPickupTime",
+        "Type": "System.Nullable\u00601[[System.TimeOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "FoodDistributionRequest",
+    "RelativePath": "api/ServicesRequestsForms/api/PostFoodDist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CharityName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactPerson",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PickupAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FoodTypeNeeded",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuantityNeeded",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreferredDeliveryDate",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "FoodCollectionRequest",
+    "RelativePath": "api/ServicesRequestsForms/GetAllCollection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "FoodDistributionRequest",
+    "RelativePath": "api/ServicesRequestsForms/GetAllDistReq",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "PartnershipRequest",
+    "RelativePath": "api/ServicesRequestsForms/GetAllPartReq",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faid.Controllers.ServicesRequestsForms",
+    "Method": "PartnershipRequest",
+    "RelativePath": "api/ServicesRequestsForms/PostPartnership",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OrganizationType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrganizationName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactPerson",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PartnershipGoals",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

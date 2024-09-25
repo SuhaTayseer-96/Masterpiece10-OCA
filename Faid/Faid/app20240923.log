@@ -1,0 +1,745 @@
+2024-09-23 12:25:24.690 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 12:25:24.733 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 12:25:24.785 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 12:25:24.787 +03:00 [INF] Hosting environment: Development
+2024-09-23 12:25:24.789 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 12:25:24.940 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 12:25:25.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 250.1789ms
+2024-09-23 12:25:25.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 12:25:25.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 12:25:25.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 8.1658ms
+2024-09-23 12:25:25.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.987ms
+2024-09-23 12:25:25.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 12:25:25.446 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.0726ms
+2024-09-23 12:36:22.292 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 12:36:22.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 10.6271ms
+2024-09-23 12:36:22.395 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 12:36:22.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 4.6407ms
+2024-09-23 12:36:22.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 12:36:22.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.0531ms
+2024-09-23 12:36:22.503 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 12:36:22.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8498ms
+2024-09-23 12:36:53.525 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostPartnership - multipart/form-data; boundary=----WebKitFormBoundary9SfqjSIse4EMWyT1 697
+2024-09-23 12:36:53.535 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:36:53.539 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.PartnershipRequest (Faid)'
+2024-09-23 12:36:53.558 +03:00 [INF] Route matched with {action = "PartnershipRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartnershipRequest(Faid.DTOs.PartnershipReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:36:54.694 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 12:36:55.141 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[RequestID], [p].[ContactPerson], [p].[ContactPhoneNumber], [p].[Email], [p].[OrganizationName], [p].[OrganizationType], [p].[PartnershipGoals]
+FROM [PartnershipRequests] AS [p]
+2024-09-23 12:36:55.343 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 15) (DbType = AnsiString), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PartnershipRequests] ([ContactPerson], [ContactPhoneNumber], [Email], [OrganizationName], [OrganizationType], [PartnershipGoals])
+OUTPUT INSERTED.[RequestID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-09-23 12:36:55.383 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.PartnershipRequest'.
+2024-09-23 12:36:55.396 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.PartnershipRequest (Faid) in 1832.2993ms
+2024-09-23 12:36:55.401 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.PartnershipRequest (Faid)'
+2024-09-23 12:36:55.409 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostPartnership - 200 null application/json; charset=utf-8 1883.6079ms
+2024-09-23 12:40:21.377 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryi3gFbDjq4DyJLiBT 852
+2024-09-23 12:40:21.387 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:40:21.391 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:40:21.396 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:40:21.410 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:40:21.424 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 26.8325ms
+2024-09-23 12:40:21.429 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:40:21.429 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - 400 null application/problem+json; charset=utf-8 52.3358ms
+2024-09-23 12:45:15.478 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 12:45:15.488 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 10.6796ms
+2024-09-23 12:45:15.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 12:45:15.511 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.2921ms
+2024-09-23 12:45:15.512 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 12:45:15.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.7192ms
+2024-09-23 12:45:15.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 12:45:15.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.1985ms
+2024-09-23 12:47:43.099 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 12:47:43.130 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 12:47:43.167 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 12:47:43.171 +03:00 [INF] Hosting environment: Development
+2024-09-23 12:47:43.173 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 12:47:43.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 12:47:43.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 116.4271ms
+2024-09-23 12:47:43.578 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 12:47:43.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 12:47:43.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.4811ms
+2024-09-23 12:47:43.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.8243ms
+2024-09-23 12:47:43.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 12:47:43.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.0131ms
+2024-09-23 12:48:01.057 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - application/json 276
+2024-09-23 12:48:01.069 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:48:01.077 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:48:01.091 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:48:01.194 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:48:01.208 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 111.9497ms
+2024-09-23 12:48:01.211 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:48:01.213 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - 400 null application/problem+json; charset=utf-8 155.5858ms
+2024-09-23 12:49:56.678 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - application/json 190
+2024-09-23 12:49:56.686 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:49:56.689 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:49:56.694 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:49:56.708 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:49:56.711 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 11.6151ms
+2024-09-23 12:49:56.712 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:49:56.713 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - 400 null application/problem+json; charset=utf-8 35.0656ms
+2024-09-23 12:50:08.968 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - application/json 190
+2024-09-23 12:50:08.974 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:50:08.977 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:50:08.979 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:50:08.985 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:50:08.987 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 6.2511ms
+2024-09-23 12:50:08.988 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:50:08.989 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - 400 null application/problem+json; charset=utf-8 21.017ms
+2024-09-23 12:53:49.251 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodDist - multipart/form-data; boundary=----WebKitFormBoundaryHdYVg6Xhl8hCb6V8 946
+2024-09-23 12:53:49.257 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:53:49.258 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid)'
+2024-09-23 12:53:49.262 +03:00 [INF] Route matched with {action = "FoodDistributionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodDistributionRequest(Faid.DTOs.FoodDistReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:53:49.277 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:53:49.281 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid) in 17.7673ms
+2024-09-23 12:53:49.284 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid)'
+2024-09-23 12:53:49.285 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodDist - 400 null application/problem+json; charset=utf-8 33.5944ms
+2024-09-23 12:55:04.623 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodDist - multipart/form-data; boundary=----WebKitFormBoundarykte1QfKpnkpAPisA 925
+2024-09-23 12:55:04.629 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:55:04.630 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid)'
+2024-09-23 12:55:04.631 +03:00 [INF] Route matched with {action = "FoodDistributionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodDistributionRequest(Faid.DTOs.FoodDistReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:55:04.635 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:55:04.637 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid) in 4.9061ms
+2024-09-23 12:55:04.639 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodDistributionRequest (Faid)'
+2024-09-23 12:55:04.640 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodDist - 400 null application/problem+json; charset=utf-8 16.4548ms
+2024-09-23 12:55:20.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 12:55:20.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 11.2458ms
+2024-09-23 12:55:20.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 12:55:20.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 12:55:20.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 4.4598ms
+2024-09-23 12:55:20.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.096ms
+2024-09-23 12:55:20.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 12:55:20.226 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.4816ms
+2024-09-23 12:55:29.287 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - application/json 237
+2024-09-23 12:55:29.293 +03:00 [INF] CORS policy execution successful.
+2024-09-23 12:55:29.294 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:55:29.297 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 12:55:29.801 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 12:55:30.021 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[RequestID], [f].[Email], [f].[FoodType], [f].[Name], [f].[Phone], [f].[PickupAddress], [f].[PreferredPickupDate], [f].[PreferredPickupTime], [f].[UserID]
+FROM [FoodCollectionRequests] AS [f]
+2024-09-23 12:55:30.181 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 20), @p4='?' (Size = 255), @p5='?' (DbType = Date), @p6='?' (DbType = Time), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FoodCollectionRequests] ([Email], [FoodType], [Name], [Phone], [PickupAddress], [PreferredPickupDate], [PreferredPickupTime], [UserID])
+OUTPUT INSERTED.[RequestID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-23 12:55:30.200 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.FoodCollectionRequest'.
+2024-09-23 12:55:30.218 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 917.8828ms
+2024-09-23 12:55:30.224 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 12:55:30.229 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/PostFoodCol - 200 null application/json; charset=utf-8 941.8636ms
+2024-09-23 13:35:34.390 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 13:35:34.417 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 13:35:34.852 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 13:35:34.883 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 13:35:34.918 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:35:34.921 +03:00 [INF] Hosting environment: Development
+2024-09-23 13:35:34.924 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 13:35:35.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 13:35:35.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 100.8338ms
+2024-09-23 13:35:35.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 13:35:35.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 13:35:35.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.151ms
+2024-09-23 13:35:35.560 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.5011ms
+2024-09-23 13:35:35.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 13:35:35.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.1334ms
+2024-09-23 13:40:38.991 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 276
+2024-09-23 13:40:39.007 +03:00 [INF] CORS policy execution successful.
+2024-09-23 13:40:39.010 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 13:40:39.029 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 13:40:39.152 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 13:40:39.176 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 142.8244ms
+2024-09-23 13:40:39.179 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 13:40:39.180 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 188.685ms
+2024-09-23 14:44:07.476 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 14:44:07.501 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 14:44:07.531 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:44:07.534 +03:00 [INF] Hosting environment: Development
+2024-09-23 14:44:07.535 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 14:44:07.965 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 14:44:08.060 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 94.4611ms
+2024-09-23 14:44:08.067 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 14:44:08.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.7094ms
+2024-09-23 14:44:08.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 14:44:08.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.2446ms
+2024-09-23 14:44:08.247 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 14:44:08.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.5695ms
+2024-09-23 14:44:27.545 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 227
+2024-09-23 14:44:27.559 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:44:27.565 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:27.585 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:44:27.719 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:44:27.742 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 149.9492ms
+2024-09-23 14:44:27.746 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:27.748 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 203.5139ms
+2024-09-23 14:44:53.419 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 226
+2024-09-23 14:44:53.427 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:44:53.428 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:53.433 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:44:53.445 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:44:53.449 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 12.2095ms
+2024-09-23 14:44:53.450 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:53.451 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 32.4027ms
+2024-09-23 14:44:55.964 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 226
+2024-09-23 14:44:55.972 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:44:55.974 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:55.982 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:44:55.985 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:44:55.986 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 2.5123ms
+2024-09-23 14:44:55.987 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:44:55.988 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 24.1079ms
+2024-09-23 14:45:41.524 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 226
+2024-09-23 14:45:41.529 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:45:41.530 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:45:41.531 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:45:41.545 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:45:41.548 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 7.8301ms
+2024-09-23 14:45:41.549 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:45:41.550 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 26.1033ms
+2024-09-23 14:47:00.751 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 219
+2024-09-23 14:47:00.757 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:47:00.760 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:47:00.760 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:47:00.764 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:47:00.766 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 3.6948ms
+2024-09-23 14:47:00.767 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:47:00.770 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 18.9292ms
+2024-09-23 14:47:53.998 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - application/json 192
+2024-09-23 14:47:54.002 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:47:54.004 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:47:54.007 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:47:54.755 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 14:47:55.083 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[RequestID], [f].[Email], [f].[FoodType], [f].[Name], [f].[Phone], [f].[PickupAddress], [f].[PreferredPickupDate], [f].[PreferredPickupTime], [f].[UserID]
+FROM [FoodCollectionRequests] AS [f]
+2024-09-23 14:47:55.307 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 20), @p4='?' (Size = 255), @p5='?' (DbType = Date), @p6='?' (DbType = Time), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FoodCollectionRequests] ([Email], [FoodType], [Name], [Phone], [PickupAddress], [PreferredPickupDate], [PreferredPickupTime], [UserID])
+OUTPUT INSERTED.[RequestID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-23 14:47:55.341 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.FoodCollectionRequest'.
+2024-09-23 14:47:55.365 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 1356.6755ms
+2024-09-23 14:47:55.366 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:47:55.377 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 200 null application/json; charset=utf-8 1379.0528ms
+2024-09-23 14:53:47.629 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 14:53:47.653 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 14:53:47.688 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:53:47.689 +03:00 [INF] Hosting environment: Development
+2024-09-23 14:53:47.691 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 14:53:47.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 14:53:48.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 104.4136ms
+2024-09-23 14:53:48.060 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 14:53:48.060 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 14:53:48.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 6.6381ms
+2024-09-23 14:53:48.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.8221ms
+2024-09-23 14:53:48.312 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 14:53:48.387 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.6622ms
+2024-09-23 14:53:53.381 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 14:53:53.414 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 14:53:53.454 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:53:53.456 +03:00 [INF] Hosting environment: Development
+2024-09-23 14:53:53.456 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 14:53:54.327 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 14:53:54.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 260.3922ms
+2024-09-23 14:53:54.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 14:53:54.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 14:53:54.615 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 8.1077ms
+2024-09-23 14:53:54.640 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8381ms
+2024-09-23 14:53:54.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 14:53:54.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.3809ms
+2024-09-23 14:55:23.037 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundarypfp7088qQSZbG1og 818
+2024-09-23 14:55:23.059 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:55:23.065 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:55:23.098 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:55:23.399 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:55:23.432 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 322.7144ms
+2024-09-23 14:55:23.434 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:55:23.437 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 400.2329ms
+2024-09-23 14:56:03.573 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryr81lvnfbBateZBRl 816
+2024-09-23 14:56:03.587 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:56:03.589 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:03.592 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:56:03.609 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:56:03.613 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 16.0641ms
+2024-09-23 14:56:03.624 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:03.625 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 58.0809ms
+2024-09-23 14:56:21.903 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryydgd9GI122pg8rAF 818
+2024-09-23 14:56:21.921 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:56:21.921 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:21.922 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:56:21.927 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:56:21.930 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 6.4329ms
+2024-09-23 14:56:21.932 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:21.934 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 30.7416ms
+2024-09-23 14:56:31.721 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryCmIXpQ5Rm1FpwyCG 812
+2024-09-23 14:56:31.723 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:56:31.726 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:31.726 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:56:31.730 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:56:31.731 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 3.1078ms
+2024-09-23 14:56:31.732 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:56:31.733 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 12.8454ms
+2024-09-23 14:59:00.691 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundary7q1HlMjsJBpgpWWD 764
+2024-09-23 14:59:00.699 +03:00 [INF] CORS policy execution successful.
+2024-09-23 14:59:00.699 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:59:00.700 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 14:59:00.703 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 14:59:00.710 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 8.5207ms
+2024-09-23 14:59:00.713 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 14:59:00.714 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 24.3462ms
+2024-09-23 15:21:25.043 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryBmW42lhoIGrARmCr 750
+2024-09-23 15:21:25.054 +03:00 [INF] CORS policy execution successful.
+2024-09-23 15:21:25.057 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 15:21:25.057 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 15:21:25.060 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 15:21:25.065 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 6.354ms
+2024-09-23 15:21:25.066 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 15:21:25.068 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 24.6685ms
+2024-09-23 15:23:28.665 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryyQlSNhmVZU6GwsQO 746
+2024-09-23 15:23:28.677 +03:00 [INF] CORS policy execution successful.
+2024-09-23 15:23:28.678 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 15:23:28.680 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 15:23:56.270 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 15:23:56.852 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[RequestID], [f].[Email], [f].[FoodType], [f].[Name], [f].[Phone], [f].[PickupAddress], [f].[PreferredPickupDate], [f].[PreferredPickupTime], [f].[UserID]
+FROM [FoodCollectionRequests] AS [f]
+2024-09-23 15:23:57.095 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 20), @p4='?' (Size = 255), @p5='?' (DbType = Date), @p6='?' (DbType = Time), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FoodCollectionRequests] ([Email], [FoodType], [Name], [Phone], [PickupAddress], [PreferredPickupDate], [PreferredPickupTime], [UserID])
+OUTPUT INSERTED.[RequestID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-23 15:23:57.127 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.FoodCollectionRequest'.
+2024-09-23 15:23:57.155 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 28471.7971ms
+2024-09-23 15:23:57.159 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 15:23:57.166 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 200 null application/json; charset=utf-8 28501.2923ms
+2024-09-23 15:31:46.209 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/Restaurant/getAllRestaurant - null null
+2024-09-23 15:31:46.218 +03:00 [INF] CORS policy execution successful.
+2024-09-23 15:31:46.220 +03:00 [INF] Executing endpoint 'Faid.Controllers.RestaurantController.getAllRestaurant (Faid)'
+2024-09-23 15:31:46.227 +03:00 [INF] Route matched with {action = "getAllRestaurant", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAllRestaurant() on controller Faid.Controllers.RestaurantController (Faid).
+2024-09-23 15:31:46.298 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RestaurantID], [r].[Address], [r].[CloseTime], [r].[ContactInfo], [r].[FoodType], [r].[Image], [r].[Name], [r].[OpenTime]
+FROM [Restaurants] AS [r]
+2024-09-23 15:31:46.350 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Faid.Models.Restaurant, Faid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 15:31:46.359 +03:00 [INF] Executed action Faid.Controllers.RestaurantController.getAllRestaurant (Faid) in 127.1615ms
+2024-09-23 15:31:46.361 +03:00 [INF] Executed endpoint 'Faid.Controllers.RestaurantController.getAllRestaurant (Faid)'
+2024-09-23 15:31:46.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/Restaurant/getAllRestaurant - 200 null application/json; charset=utf-8 156.1266ms
+2024-09-23 16:43:36.643 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 16:43:36.667 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 16:43:36.694 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 16:43:36.697 +03:00 [INF] Hosting environment: Development
+2024-09-23 16:43:36.697 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 16:43:37.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 16:43:37.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 110.3744ms
+2024-09-23 16:43:37.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 16:43:37.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 16:43:37.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.3657ms
+2024-09-23 16:43:37.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.2143ms
+2024-09-23 16:43:37.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 16:43:37.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.292ms
+2024-09-23 16:43:40.194 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/Restaurant/getAllRestaurant - null null
+2024-09-23 16:43:40.202 +03:00 [INF] CORS policy execution successful.
+2024-09-23 16:43:40.206 +03:00 [INF] Executing endpoint 'Faid.Controllers.RestaurantController.getAllRestaurant (Faid)'
+2024-09-23 16:43:40.219 +03:00 [INF] Route matched with {action = "getAllRestaurant", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAllRestaurant() on controller Faid.Controllers.RestaurantController (Faid).
+2024-09-23 16:43:41.154 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RestaurantID], [r].[Address], [r].[CloseTime], [r].[ContactInfo], [r].[FoodType], [r].[Image], [r].[Name], [r].[OpenTime]
+FROM [Restaurants] AS [r]
+2024-09-23 16:43:41.207 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Faid.Models.Restaurant, Faid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 16:43:41.227 +03:00 [INF] Executed action Faid.Controllers.RestaurantController.getAllRestaurant (Faid) in 1003.6578ms
+2024-09-23 16:43:41.229 +03:00 [INF] Executed endpoint 'Faid.Controllers.RestaurantController.getAllRestaurant (Faid)'
+2024-09-23 16:43:41.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/Restaurant/getAllRestaurant - 200 null application/json; charset=utf-8 1040.7392ms
+2024-09-23 19:12:47.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger - null null
+2024-09-23 19:12:47.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger - 301 0 null 9.1201ms
+2024-09-23 19:12:47.615 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 19:12:47.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 6.149ms
+2024-09-23 19:12:47.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui.css - null null
+2024-09-23 19:12:47.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-23 19:12:47.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui-bundle.js - null null
+2024-09-23 19:12:47.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 19:12:47.643 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 19:12:47.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 4.74ms
+2024-09-23 19:12:47.655 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-23 19:12:47.656 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-23 19:12:47.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui.css - 200 143943 text/css 14.8806ms
+2024-09-23 19:12:47.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.6352ms
+2024-09-23 19:12:47.659 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 17.898ms
+2024-09-23 19:12:47.664 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-23 19:12:47.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 27.8124ms
+2024-09-23 19:12:47.792 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 19:12:47.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.2949ms
+2024-09-23 19:12:47.837 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/favicon-32x32.png - null null
+2024-09-23 19:12:47.839 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-23 19:12:47.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/favicon-32x32.png - 200 628 image/png 2.8259ms
+2024-09-23 19:14:34.102 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryI8bnZ1ReAA12oG9Y 744
+2024-09-23 19:14:34.109 +03:00 [INF] CORS policy execution successful.
+2024-09-23 19:14:34.112 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 19:14:34.121 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 19:14:34.157 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 19:14:34.169 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 46.2688ms
+2024-09-23 19:14:34.171 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 19:14:34.172 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 400 null application/problem+json; charset=utf-8 69.9896ms
+2024-09-23 19:14:45.780 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - multipart/form-data; boundary=----WebKitFormBoundaryYe9XWMXwFtp2AKPN 744
+2024-09-23 19:14:45.784 +03:00 [INF] CORS policy execution successful.
+2024-09-23 19:14:45.785 +03:00 [INF] Executing endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 19:14:45.786 +03:00 [INF] Route matched with {action = "FoodCollectionRequest", controller = "ServicesRequestsForms"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodCollectionRequest(Faid.DTOs.FoodCollReq) on controller Faid.Controllers.ServicesRequestsForms (Faid).
+2024-09-23 19:14:45.849 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:14:45.937 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[RequestID], [f].[Email], [f].[FoodType], [f].[Name], [f].[Phone], [f].[PickupAddress], [f].[PreferredPickupDate], [f].[PreferredPickupTime], [f].[UserID]
+FROM [FoodCollectionRequests] AS [f]
+2024-09-23 19:14:46.111 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 20), @p4='?' (Size = 255), @p5='?' (DbType = Date), @p6='?' (DbType = Time), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FoodCollectionRequests] ([Email], [FoodType], [Name], [Phone], [PickupAddress], [PreferredPickupDate], [PreferredPickupTime], [UserID])
+OUTPUT INSERTED.[RequestID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-23 19:14:46.136 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.FoodCollectionRequest'.
+2024-09-23 19:14:46.143 +03:00 [INF] Executed action Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid) in 353.6997ms
+2024-09-23 19:14:46.145 +03:00 [INF] Executed endpoint 'Faid.Controllers.ServicesRequestsForms.FoodCollectionRequest (Faid)'
+2024-09-23 19:14:46.147 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol - 200 null application/json; charset=utf-8 366.2865ms
+2024-09-23 19:37:15.261 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 19:37:15.284 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 19:37:15.315 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:37:15.316 +03:00 [INF] Hosting environment: Development
+2024-09-23 19:37:15.317 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 19:37:15.650 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 19:37:15.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 85.9385ms
+2024-09-23 19:37:15.738 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 19:37:15.738 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 19:37:15.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 10.4389ms
+2024-09-23 19:37:15.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.132ms
+2024-09-23 19:37:15.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 19:37:15.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.1121ms
+2024-09-23 19:45:44.982 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 19:45:45.007 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 19:45:45.035 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:45:45.038 +03:00 [INF] Hosting environment: Development
+2024-09-23 19:45:45.039 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 19:45:45.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 19:45:45.663 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 97.3265ms
+2024-09-23 19:45:45.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 19:45:45.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 19:45:45.675 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.0944ms
+2024-09-23 19:45:45.698 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.5993ms
+2024-09-23 19:45:45.807 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 19:45:45.869 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.4416ms
+2024-09-23 19:57:37.535 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 19:57:37.561 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 19:57:37.595 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:57:37.596 +03:00 [INF] Hosting environment: Development
+2024-09-23 19:57:37.598 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 19:57:37.810 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 19:57:37.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 92.1941ms
+2024-09-23 19:57:37.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 19:57:37.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 19:57:37.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.5807ms
+2024-09-23 19:57:37.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.1586ms
+2024-09-23 19:57:38.008 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 19:57:38.069 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.3091ms
+2024-09-23 21:12:18.608 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-23 21:12:18.631 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-23 21:12:18.664 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 21:12:18.665 +03:00 [INF] Hosting environment: Development
+2024-09-23 21:12:18.666 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-23 21:12:18.947 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 21:12:19.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 83.6232ms
+2024-09-23 21:12:19.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 21:12:19.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 21:12:19.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.7239ms
+2024-09-23 21:12:19.055 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8001ms
+2024-09-23 21:12:19.102 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 21:12:19.167 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.4969ms
+2024-09-23 21:13:28.897 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Donates/FoodDonation - multipart/form-data; boundary=----WebKitFormBoundary4s8YsCPBaaKS93PM 360
+2024-09-23 21:13:28.926 +03:00 [INF] CORS policy execution successful.
+2024-09-23 21:13:28.933 +03:00 [INF] Executing endpoint 'Faid.Controllers.DonatesController.FoodDonation (Faid)'
+2024-09-23 21:13:28.974 +03:00 [INF] Route matched with {action = "FoodDonation", controller = "Donates"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodDonation(Faid.DTOs.FoodDon) on controller Faid.Controllers.DonatesController (Faid).
+2024-09-23 21:13:30.547 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 21:13:31.134 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[DonationID], [f].[ContactInfo], [f].[CreatedAt], [f].[FoodType], [f].[PickupArrangements]
+FROM [FoodDonations] AS [f]
+2024-09-23 21:13:31.171 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'null'.
+2024-09-23 21:13:31.178 +03:00 [INF] Executed action Faid.Controllers.DonatesController.FoodDonation (Faid) in 2194.6246ms
+2024-09-23 21:13:31.180 +03:00 [INF] Executed endpoint 'Faid.Controllers.DonatesController.FoodDonation (Faid)'
+2024-09-23 21:13:31.192 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Donates/FoodDonation - 404 0 null 2295.671ms
+2024-09-23 21:14:40.388 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Donates/FoodDonation - multipart/form-data; boundary=----WebKitFormBoundaryP5Rc6dBmykeIXLqt 360
+2024-09-23 21:14:40.398 +03:00 [INF] CORS policy execution successful.
+2024-09-23 21:14:40.401 +03:00 [INF] Executing endpoint 'Faid.Controllers.DonatesController.FoodDonation (Faid)'
+2024-09-23 21:14:40.403 +03:00 [INF] Route matched with {action = "FoodDonation", controller = "Donates"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FoodDonation(Faid.DTOs.FoodDon) on controller Faid.Controllers.DonatesController (Faid).
+2024-09-23 21:14:40.444 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[DonationID], [f].[ContactInfo], [f].[CreatedAt], [f].[FoodType], [f].[PickupArrangements]
+FROM [FoodDonations] AS [f]
+2024-09-23 21:14:40.715 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FoodDonations] ([ContactInfo], [FoodType], [PickupArrangements])
+OUTPUT INSERTED.[DonationID], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2);
+2024-09-23 21:14:40.753 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.FoodDonation'.
+2024-09-23 21:14:40.770 +03:00 [INF] Executed action Faid.Controllers.DonatesController.FoodDonation (Faid) in 363.808ms
+2024-09-23 21:14:40.772 +03:00 [INF] Executed endpoint 'Faid.Controllers.DonatesController.FoodDonation (Faid)'
+2024-09-23 21:14:40.776 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Donates/FoodDonation - 200 null application/json; charset=utf-8 388.1865ms
+2024-09-23 21:15:51.794 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Donates/api/MoneyDonation - multipart/form-data; boundary=----WebKitFormBoundaryw5odDL8d3o6o3MnI 359
+2024-09-23 21:15:51.801 +03:00 [INF] CORS policy execution successful.
+2024-09-23 21:15:51.802 +03:00 [INF] Executing endpoint 'Faid.Controllers.DonatesController.MoneyDonation (Faid)'
+2024-09-23 21:15:51.810 +03:00 [INF] Route matched with {action = "MoneyDonation", controller = "Donates"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoneyDonation(Faid.DTOs.MoneyDon) on controller Faid.Controllers.DonatesController (Faid).
+2024-09-23 21:15:51.928 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 21:15:51.943 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DonationID], [m].[CreatedAt], [m].[DonationAmount], [m].[DonationFrequency], [m].[FundUsage]
+FROM [MoneyDonations] AS [m]
+2024-09-23 21:15:52.073 +03:00 [INF] Executed DbCommand (93ms) [Parameters=[@p0='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 50), @p2='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MoneyDonations] ([DonationAmount], [DonationFrequency], [FundUsage])
+OUTPUT INSERTED.[DonationID], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2);
+2024-09-23 21:15:52.127 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'Faid.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-23 21:15:52.158 +03:00 [INF] Executed action Faid.Controllers.DonatesController.MoneyDonation (Faid) in 341.7674ms
+2024-09-23 21:15:52.163 +03:00 [INF] Executed endpoint 'Faid.Controllers.DonatesController.MoneyDonation (Faid)'
+2024-09-23 21:15:52.169 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Faid.Controllers.DonatesController.MoneyDonation(MoneyDon request) in C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid\Controllers\DonatesController.cs:line 66
+   at lambda_method83(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-23 21:15:52.240 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Donates/api/MoneyDonation - 500 null text/plain; charset=utf-8 446.4481ms
+2024-09-23 21:16:08.826 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Donates/api/MoneyDonation - multipart/form-data; boundary=----WebKitFormBoundaryh4Rnk9Hx1pp0yGk0 357
+2024-09-23 21:16:08.832 +03:00 [INF] CORS policy execution successful.
+2024-09-23 21:16:08.834 +03:00 [INF] Executing endpoint 'Faid.Controllers.DonatesController.MoneyDonation (Faid)'
+2024-09-23 21:16:08.836 +03:00 [INF] Route matched with {action = "MoneyDonation", controller = "Donates"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoneyDonation(Faid.DTOs.MoneyDon) on controller Faid.Controllers.DonatesController (Faid).
+2024-09-23 21:16:08.848 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DonationID], [m].[CreatedAt], [m].[DonationAmount], [m].[DonationFrequency], [m].[FundUsage]
+FROM [MoneyDonations] AS [m]
+2024-09-23 21:16:08.857 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 50), @p2='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MoneyDonations] ([DonationAmount], [DonationFrequency], [FundUsage])
+OUTPUT INSERTED.[DonationID], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2);
+2024-09-23 21:16:08.860 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'Faid.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-23 21:16:08.877 +03:00 [INF] Executed action Faid.Controllers.DonatesController.MoneyDonation (Faid) in 32.2218ms
+2024-09-23 21:16:08.879 +03:00 [INF] Executed endpoint 'Faid.Controllers.DonatesController.MoneyDonation (Faid)'
+2024-09-23 21:16:08.880 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CK__MoneyDona__Donat__5EBF139D". The conflict occurred in database "Faid", table "dbo.MoneyDonations", column 'DonationFrequency'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:b9099bf9-61ed-4545-978f-5d257d6ab6c1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Faid.Controllers.DonatesController.MoneyDonation(MoneyDon request) in C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid\Controllers\DonatesController.cs:line 66
+   at lambda_method83(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-23 21:16:08.905 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Donates/api/MoneyDonation - 500 null text/plain; charset=utf-8 79.5301ms
+2024-09-23 21:35:06.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-23 21:35:06.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 19.1874ms
+2024-09-23 21:35:06.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 21:35:06.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-23 21:35:06.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 4.2572ms
+2024-09-23 21:35:06.439 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.2289ms
+2024-09-23 21:35:06.543 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-23 21:35:06.562 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1091ms
+2024-09-23 21:35:17.865 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Donates/api/RestDonation - multipart/form-data; boundary=----WebKitFormBoundaryogpm88nzfP04ZArt 450
+2024-09-23 21:35:17.869 +03:00 [INF] CORS policy execution successful.
+2024-09-23 21:35:17.871 +03:00 [INF] Executing endpoint 'Faid.Controllers.DonatesController.RestaurantDonation (Faid)'
+2024-09-23 21:35:17.877 +03:00 [INF] Route matched with {action = "RestaurantDonation", controller = "Donates"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RestaurantDonation(Faid.DTOs.RestDon) on controller Faid.Controllers.DonatesController (Faid).
+2024-09-23 21:35:17.885 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 21:35:17.919 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[DonationID], [r].[ContactDetails], [r].[CreatedAt], [r].[FoodDonated], [r].[PickupDetails], [r].[RestaurantName]
+FROM [RestaurantDonations] AS [r]
+2024-09-23 21:35:17.951 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 500), @p2='?' (Size = 500), @p3='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RestaurantDonations] ([ContactDetails], [FoodDonated], [PickupDetails], [RestaurantName])
+OUTPUT INSERTED.[DonationID], INSERTED.[CreatedAt]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-23 21:35:17.958 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.RestaurantDonation'.
+2024-09-23 21:35:17.965 +03:00 [INF] Executed action Faid.Controllers.DonatesController.RestaurantDonation (Faid) in 85.216ms
+2024-09-23 21:35:17.968 +03:00 [INF] Executed endpoint 'Faid.Controllers.DonatesController.RestaurantDonation (Faid)'
+2024-09-23 21:35:17.971 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Donates/api/RestDonation - 200 null application/json; charset=utf-8 105.9256ms

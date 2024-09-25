@@ -1,0 +1,126 @@
+2024-09-24 16:29:28.520 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-24 16:29:28.566 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-24 16:29:28.613 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:29:28.616 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:29:28.621 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:29:29.195 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:29:29.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 203.1637ms
+2024-09-24 16:29:29.416 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:29:29.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:29:29.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 14.3085ms
+2024-09-24 16:29:29.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.7546ms
+2024-09-24 16:29:29.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:29:29.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.4809ms
+2024-09-24 16:30:12.110 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7235/api/Register/register - multipart/form-data; boundary=----WebKitFormBoundaryujmRU7OL3vGDUto3 335
+2024-09-24 16:30:12.131 +03:00 [INF] CORS policy execution successful.
+2024-09-24 16:30:12.137 +03:00 [INF] Executing endpoint 'Faid.Controllers.RegisterController.UserLogin (Faid)'
+2024-09-24 16:30:12.161 +03:00 [INF] Route matched with {action = "UserLogin", controller = "Register"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(Faid.DTOs.UserDTO) on controller Faid.Controllers.RegisterController (Faid).
+2024-09-24 16:30:12.199 +03:00 [INF] Executing OkObjectResult, writing value of type 'Faid.Models.User'.
+2024-09-24 16:30:12.224 +03:00 [INF] Executed action Faid.Controllers.RegisterController.UserLogin (Faid) in 51.4998ms
+2024-09-24 16:30:12.231 +03:00 [INF] Executed endpoint 'Faid.Controllers.RegisterController.UserLogin (Faid)'
+2024-09-24 16:30:12.235 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7235/api/Register/register - 200 null application/json; charset=utf-8 124.8797ms
+2024-09-24 16:46:41.201 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-24 16:46:41.227 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-24 16:46:41.262 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:46:41.266 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:46:41.269 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:46:41.609 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:46:41.719 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 110.535ms
+2024-09-24 16:46:41.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:46:41.733 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:46:41.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 9.696ms
+2024-09-24 16:46:41.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.3936ms
+2024-09-24 16:46:41.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:46:41.916 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.7743ms
+2024-09-24 16:46:58.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:46:58.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 8.346ms
+2024-09-24 16:46:58.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:46:58.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:46:58.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 3.1565ms
+2024-09-24 16:46:58.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.7987ms
+2024-09-24 16:46:58.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:46:58.982 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4553ms
+2024-09-24 16:47:48.464 +03:00 [INF] Now listening on: https://localhost:7235
+2024-09-24 16:47:48.489 +03:00 [INF] Now listening on: http://localhost:5001
+2024-09-24 16:47:48.525 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:47:48.528 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:47:48.530 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:47:48.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:47:48.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 100.8811ms
+2024-09-24 16:47:48.896 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:47:48.896 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:47:48.905 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 8.404ms
+2024-09-24 16:47:48.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.4913ms
+2024-09-24 16:47:48.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:47:49.020 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.781ms
+2024-09-24 16:49:07.367 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:49:07.377 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 9.9496ms
+2024-09-24 16:49:07.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:49:07.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:49:07.401 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.4172ms
+2024-09-24 16:49:07.406 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.8983ms
+2024-09-24 16:49:07.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:49:07.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.0738ms
+2024-09-24 16:49:20.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:49:20.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 11.3034ms
+2024-09-24 16:49:20.617 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:49:20.620 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 3.1729ms
+2024-09-24 16:49:20.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:49:20.640 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9066ms
+2024-09-24 16:49:20.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:49:20.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.534ms
+2024-09-24 16:49:47.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - null null
+2024-09-24 16:49:47.549 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - 200 null text/html;charset=utf-8 9.362ms
+2024-09-24 16:49:47.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - null null
+2024-09-24 16:49:47.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:49:47.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 3.9042ms
+2024-09-24 16:49:47.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.4813ms
+2024-09-24 16:49:47.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - null null
+2024-09-24 16:49:47.686 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.6617ms
+2024-09-24 16:50:17.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger - null null
+2024-09-24 16:50:17.094 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:50:17.117 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:50:17.117 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:50:17.270 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2024-09-24 16:50:17.278 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger - 301 null null 233.5019ms
+2024-09-24 16:50:17.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 43.6597ms
+2024-09-24 16:50:17.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/swagger-ui-bundle.js - null null
+2024-09-24 16:50:17.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/swagger-ui.css - null null
+2024-09-24 16:50:17.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-24 16:50:17.345 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-24 16:50:17.345 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-24 16:50:17.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:50:17.350 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/swagger-ui.css - 200 143943 text/css 33.916ms
+2024-09-24 16:50:17.352 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-24 16:50:17.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 32.3301ms
+2024-09-24 16:50:17.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.1093ms
+2024-09-24 16:50:17.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2024-09-24 16:50:17.372 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 56.5001ms
+2024-09-24 16:50:17.387 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2951ms
+2024-09-24 16:50:17.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2024-09-24 16:50:17.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/favicon-32x32.png - null null
+2024-09-24 16:50:17.681 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-24 16:50:17.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/favicon-32x32.png - 200 628 image/png 1.5361ms
+2024-09-24 16:50:17.740 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.4379ms
+2024-09-24 16:51:55.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2024-09-24 16:51:55.262 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:51:55.268 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:51:55.268 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:51:55.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 142.8919ms
+2024-09-24 16:51:55.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:51:55.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2024-09-24 16:51:55.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 2.9381ms
+2024-09-24 16:51:55.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.3197ms
+2024-09-24 16:51:55.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2024-09-24 16:51:55.709 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.7777ms
+2024-09-24 16:53:12.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2024-09-24 16:53:12.048 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 16:53:12.062 +03:00 [INF] Hosting environment: Development
+2024-09-24 16:53:12.063 +03:00 [INF] Content root path: C:\Users\Orange\Downloads\master\Masterpiece10-OCA\Faid\Faid
+2024-09-24 16:53:12.199 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 177.9247ms
+2024-09-24 16:53:12.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-24 16:53:12.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 3.2805ms
+2024-09-24 16:53:12.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2024-09-24 16:53:12.241 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5432ms
+2024-09-24 16:53:12.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2024-09-24 16:53:12.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.0599ms

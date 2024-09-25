@@ -16,4 +16,6 @@ public partial class PartnershipRequest
     public string? Email { get; set; }
 
     public string? PartnershipGoals { get; set; }
+
+    public string? ContactPhoneNumber { get; set; }
 }

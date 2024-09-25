@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\dtos\\foodmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\dtos\\foodmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|c:\\users\\orange\\downloads\\master\\masterpiece10-oca\\faid\\faid\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22206AFB-93DF-481C-9CFE-0AC6E26151BD}|Faid\\Faid.csproj|solutionrelative:faid\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +34,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Faid\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\User.cs",
+              "RelativeToolTip": "Faid\\Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:03:57.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Faid\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Faid\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAIwJwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T17:59:09.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Faid\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Faid\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T17:40:19.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Faid\\Models\\Restaurant.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\Restaurant.cs",
+              "RelativeToolTip": "Faid\\Models\\Restaurant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T11:42:51.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FoodMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\DTOs\\FoodMenu.cs",
+              "RelativeDocumentMoniker": "Faid\\DTOs\\FoodMenu.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\DTOs\\FoodMenu.cs",
+              "RelativeToolTip": "Faid\\DTOs\\FoodMenu.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T11:34:42.055Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -35,39 +112,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\appsettings.json",
-              "RelativeDocumentMoniker": "Faid\\appsettings.json",
-              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\appsettings.json",
-              "RelativeToolTip": "Faid\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-20T19:29:51.532Z",
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Faid\\Controllers\\RestaurantController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Faid\\Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAuwFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T06:21:44.397Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Program.cs",
-              "RelativeDocumentMoniker": "Faid\\Program.cs",
-              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Program.cs",
-              "RelativeToolTip": "Faid\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T19:29:27.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "Faid\\Models\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\Orange\\Downloads\\master\\Masterpiece10-OCA\\Faid\\Faid\\Models\\MyDbContext.cs",
-              "RelativeToolTip": "Faid\\Models\\MyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T19:29:21.802Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",

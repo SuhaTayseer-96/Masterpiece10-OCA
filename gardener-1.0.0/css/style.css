@@ -1183,12 +1183,13 @@ h6,
         margin: 0;
         font-size: 18px;
         color: #333;
-        text-align: center;
+        text-align:center;
     }
     
     .notification p {
         margin: 5px 0;
         font-size: 14px;
         color: #555;
+        text-align: center;
     }
     

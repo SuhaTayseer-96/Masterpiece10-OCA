@@ -194,7 +194,7 @@
                             <input type="time" class="form-control" id="pickupTime" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Request</button>
-                    </form>
+                    </form>                    
                 </div>
             </div>
         </div>
@@ -329,6 +329,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Interest</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -415,37 +416,119 @@
 <!-- Scripts -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Handle the form submission here if needed
-    document.getElementById('distributionRequestForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Collect form data
-        const charityName = document.getElementById('charityName').value;
-        const contactPerson = document.getElementById('contactPerson').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const address = document.getElementById('address').value;
-        const foodNeeds = document.getElementById('foodNeeds').value;
-        const quantity = document.getElementById('quantity').value;
-        const preferredDate = document.getElementById('preferredDate').value;
+// <!--Collection form-->
+    document.getElementById("foodCollectionForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-        // You can now send this data to your server or process it as required
-        console.log({
-            charityName,
-            contactPerson,
-            email,
-            phone,
-            address,
-            foodNeeds,
-            quantity,
-            preferredDate
+        // Gather form data
+        const formData = new FormData();
+        formData.append("Name", document.getElementById("name").value);
+        formData.append("Email", document.getElementById("email").value);
+        formData.append("Phone", document.getElementById("phone").value);
+        formData.append("PickupAddress", document.getElementById("address").value);
+        formData.append("FoodType", document.getElementById("foodType").value);
+        formData.append("PreferredPickupDate", document.getElementById("pickupDate").value);
+        formData.append("PreferredPickupTime", document.getElementById("pickupTime").value);
+
+        // Send data to the API
+        const response = await fetch("https://localhost:7235/api/ServicesRequestsForms/api/PostFoodCol", {
+            method: "POST",
+            body: formData
         });
 
-        // Show success message or handle form submission
-        alert('Your food distribution request has been submitted successfully!');
+        // Check the response status
+        if (response.ok) {
+            const data = await response.json();
+            // Handle success
+            alert("Form submitted successfully!");
+            console.log("Success:", data);
+        } else {
+            // Handle error response
+            alert(`Error: ${response.status} - ${response.statusText}`);
+        }
     });
 </script>
 
 
+<!--distributionform-->
+<script>
+    document.getElementById("distributionRequestForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Gather form data
+        const formData = new FormData();
+        formData.append("CharityName", document.getElementById("charityName").value);
+        formData.append("ContactPerson", document.getElementById("contactPerson").value);
+        formData.append("Email", document.getElementById("email").value);
+        formData.append("Phone", document.getElementById("phone").value);
+        formData.append("PickupAddress", document.getElementById("address").value);
+        formData.append("FoodTypeNeeded", document.getElementById("foodNeeds").value);
+        formData.append("QuantityNeeded", document.getElementById("quantity").value);
+        formData.append("PreferredDeliveryDate", document.getElementById("preferredDate").value);
+
+        try {
+            // Send data to the API using async/await
+            const response = await fetch("https://your-api-url/api/PostFoodDist", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                // Handle success
+                alert("Request submitted successfully!");
+                console.log("Success:", data);
+            } else {
+                // Handle errors (non-200 responses)
+                alert("There was an error with the submission.");
+            }
+        } catch (error) {
+            // Handle network or unexpected errors
+            console.error("Error:", error);
+            alert("A network error occurred.");
+        }
+    });
+</script>
+<!--distributionform-->
+
+<!--partnerform-->
+<script>
+    document.getElementById("partnershipForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Gather form data
+        const formData = new FormData();
+        formData.append("OrganizationType", document.getElementById("organizationType").value);
+        formData.append("ContactPerson", document.getElementById("contactPerson").value);
+        formData.append("Email", document.getElementById("contactEmail").value);
+        formData.append("ContactPhoneNumber", document.getElementById("contactPhone").value);
+        formData.append("PartnershipGoals", document.getElementById("partnershipGoals").value);
+
+        try {
+            // Send data to the API using fetch
+            const response = await fetch("https://localhost:7235/api/ServicesRequestsForms/PostPartnership", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                // Handle success
+                alert("Partnership request submitted successfully!");
+                console.log("Success:", data);
+            } else {
+                // Handle errors (non-200 responses)
+                alert("There was an error with the submission.");
+            }
+        } catch (error) {
+            // Handle network or unexpected errors
+            console.error("Error:", error);
+            alert("A network error occurred.");
+        }
+    });
+</script>
+
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -17,6 +17,8 @@ public partial class FoodAvailable
 
     public DateTime? AvailableUntil { get; set; }
 
+    public string? Image { get; set; }
+
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
     public virtual Restaurant? Restaurant { get; set; }

@@ -7,13 +7,7 @@ public partial class User
 {
     public int UserId { get; set; }
 
-    public string? Name { get; set; }
-
     public string? Email { get; set; }
-
-    public string? PasswordHash { get; set; }
-
-    public string? UserType { get; set; }
 
     public string? Phone { get; set; }
 
@@ -21,7 +15,17 @@ public partial class User
 
     public DateTime? DateJoined { get; set; }
 
-    public virtual ICollection<Donation> Donations { get; set; } = new List<Donation>();
+    public string? Password { get; set; }
+
+    public byte[]? PasswordHash { get; set; }
+
+    public byte[]? PasswordSalt { get; set; }
+
+    public string? UserName { get; set; }
+
+    public string? Image { get; set; }
+
+    public virtual ICollection<ContactU> ContactUs { get; set; } = new List<ContactU>();
 
     public virtual ICollection<FoodCollectionRequest> FoodCollectionRequests { get; set; } = new List<FoodCollectionRequest>();
 

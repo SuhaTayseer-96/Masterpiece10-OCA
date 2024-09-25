@@ -12,4 +12,6 @@ public partial class Partner
     public string? PartnerType { get; set; }
 
     public string? ContactInfo { get; set; }
+
+    public string? Image { get; set; }
 }

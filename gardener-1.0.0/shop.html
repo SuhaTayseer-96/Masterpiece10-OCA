@@ -350,49 +350,8 @@ Don’t have an account?
                 </div>
             </section> -->
             <!-- End small-menu section -->
-            <div class="container">
-                <h2 class="text-center mb-4">Food Listings</h2>
-                <div class="row">
-                    <!-- Product Card -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/menu/b1.jpg" style="width: 400px; height: 200;" alt="Food Item">
-                            <div class="product-card-body">
-                                <h5 class="card-title">Delicious Pizza</h5>
-                                <p class="card-text">A scrumptious pizza with a variety of toppings. Perfect for any meal.</p>
-                                <p class="card-text"><strong>Price:</strong> $12.99</p>
-                                <button class="btn btn-primary w-100">Proceed the Order</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repeat for more products -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/menu/b2.jpg" style="width: 400px; height: 200;" alt="Food Item">
-                            <div class="product-card-body">
-                                <h5 class="card-title">Delicious Pizza</h5>
-                                <p class="card-text">A scrumptious pizza with a variety of toppings. Perfect for any meal.</p>
-                                <p class="card-text"><strong>Price:</strong> $12.99</p>
-                                <button class="btn btn-primary w-100">Proceed the Order</button>
-                            </div>
-                        </div>
-                    </div>
+            <div id="menu"></div>
 
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/menu/b3.jpg" style="width: 400px; height: 200;" alt="Food Item">
-                            <div class="product-card-body">
-                                <h5 class="card-title">Delicious Pizza</h5>
-                                <p class="card-text">A scrumptious pizza with a variety of toppings. Perfect for any meal.</p>
-                                <p class="card-text"><strong>Price:</strong> $12.99</p>
-                                <button class="btn btn-primary w-100">Proceed the Order</button>
-
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div> 
-            </div>
             
             <!-- Modal HTML -->
         <div class="modal fade" id="interestModal" tabindex="-1" aria-labelledby="interestModalLabel" aria-hidden="true">
@@ -563,6 +522,41 @@ Don’t have an account?
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Function to get the restaurantId from the URL
+        function getRestaurantIdFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('restaurantId');
+        }
+
+        // Fetch and display the menu for the restaurant
+        async function fetchRestaurantMenu() {
+            const restaurantId = getRestaurantIdFromUrl();
+            
+            if (restaurantId) {
+                // Fetch the menu for this restaurantId
+                const response = await fetch(`https://localhost:44395/api/Restaurant/menu/${restaurantId}`);
+                const menuItems = await response.json();
+                
+                const menuContainer = document.getElementById('menu');
+                menuContainer.innerHTML = '';
+
+                menuItems.forEach(item => {
+                    const menuItem = document.createElement('div');
+                    menuItem.innerHTML = `
+                        <h3>${item.foodName}</h3>
+                        <p>Price: $${item.price}</p>
+                    `;
+                    menuContainer.appendChild(menuItem);
+                });
+            }
+        }
+
+        // Call the fetch function when the page loads
+        window.onload = fetchRestaurantMenu;
+
+
+    </script>
 </body>
 
 </html>

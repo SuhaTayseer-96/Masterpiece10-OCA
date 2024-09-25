@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Faid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aa48515121b680a1fb32edf53db3cfb557c1769")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3000a0a4885048d0183dfa37537ba2a9b4be42f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Faid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Faid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
